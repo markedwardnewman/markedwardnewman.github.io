@@ -1,0 +1,271 @@
+// variable references are located in the variables.less file
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: @font-family-primary;
+  font-size: @size-3;
+  font-weight: @font-weight-normal;
+  background: @color-tertiary;
+  color: @color-primary-75;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+a:link,
+a:visited {color: @color-link;}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: @color-primary-87;
+}
+a:active {
+  text-decoration: none;
+  color: @color-primary-87;
+}
+
+b {color: @color-primary-87;}
+
+h1, .h1, h2, h3, .nav-main a {
+  margin: 0;
+  padding: 0;
+  font-family: @font-family-secondary;
+}
+h1, .h1 {
+  margin-top: @size-3;
+  margin-bottom: @size-3;
+  font-size: @size-6 !important;
+}
+h2 {
+  margin-bottom: @size-3;
+  font-size: size-5 !important;
+}
+h3 {font-size: @size-4 !important;}
+
+hr {border-color: inherit;}
+
+li:last-child {padding-bottom: 0;}
+
+footer {
+  font-size: @size-2;
+  padding: @size-3;
+  border: @border-primary;
+  background: @color-dark;
+  box-shadow: 2px 2px 2px @color-tertiary;
+}
+
+img {border: 0;}
+
+p {
+  -webkit-margin-before: @size-3 !important;
+  -webkit-margin-after: @size-3 !important;
+}
+
+sup {
+  font-size: @size-2;
+  text-decoration: underline !important;
+}
+
+.bg-light {background: @color-light;}
+
+.caption {
+  text-align: center;
+  border: @border-primary;
+  background: @color-dark;
+  box-shadow: 2px 2px 2px @color-tertiary;
+}
+
+.content {
+  padding: @size-5;
+  border-left: @border-primary;
+  border-right: @border-primary;
+  background: @color-secondary-75;
+}
+.content h2 {text-align: center;}
+.content-panel {
+  padding: @size-3;
+  border: @border-primary;
+  border-radius: @border-radius;
+  background: @color-dark;
+}
+
+.hide {display: none;}
+
+.logo {
+  background: @color-dark;
+  border: @border-primary;
+  text-align: center;
+  min-height: 83px;
+}
+
+.nav-main {
+  position: relative;
+  box-shadow: 2px 2px 2px @color-tertiary;
+}
+.nav-main a {
+  background: @color-secondary;
+  color: @color-primary-87;
+}
+.nav-main a:hover,
+.nav-main a:focus {
+  background: @color-primary-87;
+  color: @color-secondary;
+}
+.nav-main a:active {
+  background: @color-secondary;
+  color: @color-primary-87;
+}
+.nav-main .btn {
+  font-size: @size-4 !important;
+  border: @border-primary;
+  border-radius: 0;
+}
+
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
+.padding {padding: @size-3;}
+.padding-top {padding-top: @size-3;}
+.padding-top-remove {padding-top: 0 !important;}
+.padding-horizontal-remove {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.margin-horizontal-remove {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.slide-left {
+  opacity: 0;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -webkit-transform: translate3d(-100px, 0, 0);
+          transform: translate3d(-100px, 0, 0);
+}
+.slide-right {
+  opacity: 0;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -webkit-transform: translate3d(100px, 0, 0);
+          transform: translate3d(100px, 0, 0);
+}
+.slide-up {
+  opacity: 0;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -webkit-transform: translate3d(0, 100px, 0);
+          transform: translate3d(0, 100px, 0);
+}
+.slide-down {
+  opacity: 0;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -webkit-transform: translate3d(0, -100px, 0);
+          transform: translate3d(0, -100px, 0);
+}
+.in-view {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.text-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+
+#footnotes h3 {text-align: center;}
+#footnotes li {
+  line-height: 1.5;
+  font-size: @size-2;
+  padding-bottom: @size-2;
+}
+#footnotes li:last-child {padding-bottom: 0;}
+#footnotes ol {
+  line-height: 1.5;
+  font-size: @size-2;
+  padding: @size-5 @size-5 0 @size-5;
+  margin: 0;
+}
+
+#parallax {
+  min-height: 900px;
+  background: transparent;
+}
+
+
+// JQUERY-UI RELATED
+#accordion_summary h3,
+#accordion_skills h3 {
+  background: @color-secondary;
+  color: @color-primary-75;
+  font-size: @size-4;
+  font-weight: @font-weight-bold;
+}
+#accordion_summary h3:hover,
+#accordion_skills h3:hover {
+  background: @color-secondary-75;
+  color: @color-primary-75;
+  cursor: pointer;
+}
+#accordion_summary .ui-icon,
+#accordion_skills .ui-icon {display: none;}
+.ui-accordion .ui-accordion-content {padding: 0 @size-3 0 @size-3;}
+.ui-state-default {border: 1px solid transparent;}
+.ui-state-focus:focus {outline: none !important;}
+.ui-widget-content {
+  font-family: @font-family-primary;
+  color: @color-primary-75;
+  background: @color-dark;
+  border: 0;
+  padding: @size-3;
+}
+#accordion_skills ul {margin: @size-3;}
+
+
+// MEDIA QUERIES
+@media (max-width: 990px) { 
+  h1, .h1                {font-size: @size-5;}
+  h2                     {font-size: @size-4;}
+  h3, .nav-main .btn     {font-size: @size-3 !important;}
+  
+  li, p {font-size: @size-2 !important;}
+  
+  .content,
+  .content-panel,
+  .ui-accordion .ui-accordion-content {padding: @size-1;}
+  
+  .logo {min-height: 131px !important;}
+}
+
+@media (max-width: 480px) { 
+  h1, .h1                {font-size: @size-4 !important;}
+  h2                     {font-size: @size-3;}
+  h3, .nav-main .btn     {font-size: @size-2 * 1.25 !important;}
+  
+  li, p {font-size: @size-2 !important;}
+  
+  .content,
+  .content-panel,
+  .ui-accordion .ui-accordion-content {padding: @size-1;}
+  
+  .logo {min-height: 112px !important;}
+}
+
+
+// MAYBES
+.js-interpreter-heading {
+  display: inline-block;
+  padding: @size-1;
+  background: @color-secondary;
+  border: thin solid @color-secondary;
+  border-radius: (@border-radius * .75) (@border-radius * .75) 0 0;
+}

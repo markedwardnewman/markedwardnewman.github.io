@@ -1,0 +1,47 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+	  Mark Newman
+
+# THANKS
+
+    mom!
+
+# TECHNOLOGY COLOPHON
+    Year created:
+        Late 2013 / early 2014
+    Modified:
+        Plenty
+    Language:
+        English
+    Doctype:
+        W3C Valid HTML5
+    Compatibility:
+        Mobile-first / Responsive
+    Optimization:
+        Optimized for Load Speed
+    SEO:
+        Semantic Coding as per https://www.google.com/webmasters/markup-helper/
+    Fonts:
+        Roboto          :300,700
+        Roboto Slab     :700
+        Source Code Pro :300
+    Code Libraries used:
+        Bootstrap-CDN
+        JQuery- CDN
+    Local tools:
+        Notepad++
+        Chrome Developer tools
+        Adobe Photoshop
+        {LESS} pre-processor
+        Git Bash / npm / grunt
+    Online tools:
+        Tidy : http://www.dirtymarkup.com/
+        https://validator.w3.org/
+        ColorZilla
+        FileZilla
+        Viewport Dimensions by www.cswapps.com
+        Github
+        
+    

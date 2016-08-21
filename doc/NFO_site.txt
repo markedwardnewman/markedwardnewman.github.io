@@ -1,0 +1,26 @@
+Github hosting;
+  username: markedwardnewman
+  password: shrooman19
+  URL (not redirected): markedwardnewman.github.io
+
+useful git quips:
+  git add --all
+  git commit -m "commit message"
+  git push
+  git remote add origin git@github.com:markedwardnewman/markedwardnewman.github.io.git
+  git status -v
+
+@maroon: #5e2b2d;
+@maroon-rgba: rgba(94, 43, 45, .5);
+@starfield: #282f22;
+@sand: #fafcca; /* rgba(250,252,202,1.00);*/
+@orange: #e7cf20;
+
+DNS:
+  networksolutions
+  username: getters@gmail.com
+  password: shrooman19
+  
+pointed DNS servers to:
+  ns5.markedwardnewman.github.io
+  ns6.markedwardnewman.github.io
