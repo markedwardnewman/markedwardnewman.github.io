@@ -20,7 +20,7 @@
     Compatibility:
         Mobile-first / Responsive
     Optimization:
-        Optimized for Load Speed
+        Optimized for load speed
     SEO:
         Semantic Coding as per https://www.google.com/webmasters/markup-helper/
     Fonts:
@@ -34,11 +34,11 @@
         Notepad++
         Chrome Developer tools
         Adobe Photoshop
-        {LESS} pre-processor
+        First LESS, then SASS pre-processors
         Git Bash / npm / grunt
     Online tools:
-        Tidy : http://www.dirtymarkup.com/
-        https://validator.w3.org/
+        Tidy : http://www.dirtymarkup.com/, then grunt cssnano
+        https://validator.w3.org/, then grunt 
         ColorZilla
         FileZilla
         Viewport Dimensions by www.cswapps.com
