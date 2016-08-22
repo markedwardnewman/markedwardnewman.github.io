@@ -32,17 +32,18 @@ $(document).ready(function() {
         });
     }
 
-
     $window.on("scroll resize", checkInView);
     $window.trigger("scroll");
+
 
     $("#parallax").parallax({
         imageSrc: "assets/img/jungle.jpg",
         //position and bleed are required for IE		
-        naturalWidth: 1600,
-        naturalHeight: 900,
-        position: "top left",
-        speed: .2,
+        naturalWidth: 1920,
+        naturalHeight: 1200,
+        positionX: "right",
+        positionY: "top",
+        speed: 0.1,
         bleed: 1
     });
 

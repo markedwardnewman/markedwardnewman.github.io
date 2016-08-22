@@ -19,15 +19,16 @@ module.exports = function(grunt) {
         processors: [
         
           //Standardizes the order of css rules
-          require('postcss-sorting')({
-            /* options */ 
-          }),
+          //require('postcss-sorting'),
           
           //Assigns browser specific pre-fixes
-          require('autoprefixer')(),
+          //require('autoprefixer')(),
+
+          //Adds hexadecimal fallback colors when rgba colors are specified 
+          require('postcss-color-rgba-fallback')(),
           
           //Minify css       
-          require('cssnano')()
+          //require('cssnano')()
         ]
       },
       dist: {
@@ -48,7 +49,8 @@ module.exports = function(grunt) {
 		watch: {
       css: {
         files: 'src/assets/css/main.scss',
-        tasks: ['sass','postcss']
+        tasks: ['sass']
+        //tasks: ['sass','postcss']
       }/* ,
       html: {
         files: 'index.html',
