@@ -3,7 +3,7 @@
   Author: Mark Newman
   ========================================= */
 
-/* maroon */  
+/* maroon */
 $color-primary-lightest: rgba(100,50,50, 1);
 $color-primary-lighter:  rgba(100,50,50,.87);
 $color-primary-light:    rgba(100,50,50,.75);
@@ -15,16 +15,16 @@ $color-primary-darkest:  rgba(100,50,50,.25);
 /* sand  */
 $color-secondary-lightest: hsla(62,89%,89%, 1);
 $color-secondary-lighter:  hsla(62,89%,89%,.87);
-$color-secondary-light:    hsla(62,89%,89%,.75); 
-$color-secondary:          hsla(62,89%,89%,.67);       
-$color-secondary-dark:     hsla(62,89%,89%,.5); 
+$color-secondary-light:    hsla(62,89%,89%,.75);
+$color-secondary:          hsla(62,89%,89%,.67);
+$color-secondary-dark:     hsla(62,89%,89%,.5);
 $color-secondary-darker:   hsla(62,89%,89%,.37);
 $color-secondary-darkest:  hsla(62,89%,89%,.25);
 
 /* olive  181, 150, 124 */
-$color-tertiary-light: rgba(99,145,99, 1);  
+$color-tertiary-light: rgba(99,145,99, 1);
 $color-tertiary:       rgba(99,145,99,.7);
-$color-tertiary-dark:  rgba(99,145,99,.5); 
+$color-tertiary-dark:  rgba(99,145,99,.5);
 
 /* black, white, and grays */
 $color-light:      rgba(255,255,255,1);
@@ -49,7 +49,7 @@ $font-family-mono:      'Source Code Pro', sans-serif;
 
 $font-weight-light:  300;
 $font-weight-bold:   700;
-   
+
 
 
 
@@ -74,7 +74,7 @@ li,
 input,
 select,
 textarea,
-button, 
+button,
 a {
   margin: 0;
   padding: 0;
@@ -256,26 +256,257 @@ footer {
 }
 
 .content-panel-item {
-  margin-bottom: $size-md;
+  position: relative;
+  //margin-bottom: $size-md;
   padding: $size;
   border-radius: $size-xs;
   text-align: center;
-  min-height: 262px;
+  min-height: 200px;
+
+  //border-top: .25px solid $color-primary-darker;
+  border-right: 2px solid $color-primary-lightest;
+  border-bottom: 2px solid $color-primary-lightest;
+  //border-left: .25px solid $color-primary-darker;
+
+  //background-color: $color-primary;
+  //background-image: none !important;
+  color: $color-secondary-light;
   //transition: color 2s;
+}
+.content-panel-item:hover {
+  background-color: $color-primary-lightest;
+  //background-image: none !important;
 }
 
 .content-panel-item a {
-  text-decoration: underline;
-  color: $color-secondary-darker;
+  text-decoration: none;
+  //color: $color-secondary-darker;
 }
 .content-panel-item a:focus,
 .content-panel-item a:hover,
 .content-panel-item a:visited  {
-  color: $color-secondary;
+  //color: $color-secondary;
 }
 .content-panel-item a:active {
-  color: $color-secondary-lighter;
+  //color: $color-secondary-lighter;
 }
+
+
+.bg-emds {
+  background: url(../img/logo-emds.png);
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  background-size: 162px 43px;
+  background-color: $color-primary;
+  background-blend-mode: multiply;
+}
+.bg-emds a.top {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform:translateX(-50%);
+  display: block;
+  width: 162px;
+  height: 43px;
+  z-index: 999;
+}
+.bg-emds:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: screen;
+}
+
+
+.bg-thanksmama {
+  //transition: color 2s;
+  background: url(../img/logo-tm.png);
+  background-repeat: no-repeat;
+  background-position: center 40px;
+  background-size: 200px 60px;
+  background-color: $color-primary;
+  background-blend-mode: multiply;
+}
+.bg-thanksmama:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: screen;
+}
+
+.bg-thanksmama a.top {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  transform:translateX(-50%);
+  display: block;
+  width: 200px;
+  height: 60px;
+  z-index: 999;
+}
+
+.bg-golden {
+  background: url(../img/logo-golden.png);
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-size: 116px 99px;
+  background-color: $color-primary;
+  background-blend-mode: multiply;
+}
+.bg-golden a.top {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform:translateX(-50%);
+  display: block;
+  width: 116px;
+  height: 99px;
+  z-index: 999;
+}
+.bg-golden:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: screen;
+}
+
+.bg-italianway {
+  background: url(../img/logo-italianway.svg);
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: 166px 35px;
+  background-color: $color-primary;
+  background-blend-mode: lighten;
+}
+.bg-italianway a.top {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform:translateX(-50%);
+  display: block;
+  width: 166px;
+  height: 35px;
+  z-index: 999;
+}
+.bg-italianway:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: multiply;
+}
+
+.bg-backbone {
+  background: url(../img/logo-backbone.png);
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: 200px 36px;
+  background-color: $color-primary;
+  background-blend-mode: multiply;
+}
+.bg-backbone a.top {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform:translateX(-50%);
+  display: block;
+  width: 200px;
+  height: 36px;
+  z-index: 999;
+}
+.bg-backbone:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: normal;
+}
+
+.bg-angular {
+  background: url(../img/logo-angular.svg);
+  background-repeat: no-repeat;
+  background-position: center 51px;
+  background-size: 200px 54px;
+  background-color: $color-primary;
+  background-blend-mode: multiply;
+}
+.bg-angular a.top {
+  position: absolute;
+  left: 50%;
+  top: 51px;
+  transform:translateX(-50%);
+  display: block;
+  width: 200px;
+  height: 54px;
+  z-index: 999;
+}
+.bg-angular:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: normal;
+}
+
+.bg-javascript {
+  padding-top: 60px;
+  background-color: $color-primary;
+}
+.bg-javascript a.top {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform:translateX(-50%);
+  display: block;
+  width: 260px;
+  height: 34px;
+  z-index: 999;
+}
+.bg-javascript:hover {
+  background-color: $color-primary-lightest;
+}
+
+.bg-lazy {
+  background: url(../img/logo-lazy.png);
+  background-repeat: no-repeat;
+  background-position: center 26px;
+  background-size: 122px 90px;
+  background-color: $color-primary;
+  background-blend-mode: multiply;
+}
+.bg-lazy a.top {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  transform:translateX(-50%);
+  display: block;
+  width: 122px;
+  height: 90px;
+  z-index: 999;
+}
+.bg-lazy:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: normal;
+}
+
+
+
+.content-panel-item a.top:hover {
+  //cursor: crosshair;
+}
+
+.content-panel-item .bottom {
+  position: absolute;
+  padding: 16px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.icon-github {
+  opacity: .5;
+  width: 64px;
+  height: 64px;
+}
+
+.content-panel-item .bottom a:hover .icon-github {
+  opacity: 1;
+}
+
+.content-panel-item-copy {
+  text-align: center;
+  padding-top: 20px;
+  line-height: 1;
+}
+
+
+
+
 
 
 /* https://css-tricks.com/almanac/properties/t/transform/ and animations
@@ -292,7 +523,7 @@ use css animation here instead of jquery-ui
 .slide-left,
 .slide-right {
   opacity: 0;
-  transition: all .5s linear;
+  transition: all .75s cubic-bezier(0, 0, 0, 1.66);
 }
 
 .in-view {
@@ -306,6 +537,10 @@ footer {
 
 footer .content-panel-item {
   min-height: 1px;
+}
+
+.row .margin-bottom {
+  margin-bottom: $size-md;
 }
 
 .ui-accordion .ui-accordion-header {
@@ -336,8 +571,7 @@ footer .content-panel-item {
   color: $color-secondary-dark;
 }
 
-.ui-state-default,
-.content-panel-item {
+.ui-state-default {
   border-top: 0;
   border-right: 2px solid $color-primary-lightest;
   border-bottom: 2px solid $color-primary-lightest;
@@ -348,8 +582,7 @@ footer .content-panel-item {
   color: $color-secondary-light;
 }
 
-.ui-state-default:hover,
-.content-panel-item:hover {
+.ui-state-default:hover {
   background-color: $color-primary-lightest;
   background-image: none !important;
 }
@@ -386,7 +619,25 @@ a.text-decoration-none {
 .hide {
   display: none;
 }
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
 
+.flip {
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+.margin-right-xs {
+  margin-right: $size-xs;
+}
+
+.margin-left-xs {
+  margin-left: $size-xs;
+}
 
 .margin-top {
   margin-top: $size-md;
@@ -437,6 +688,10 @@ a.text-decoration-none {
   left: 0;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -469,4 +724,22 @@ a.text-decoration-none {
   .logo {
     //min-height: 112px !important;
   }
+
+  .content-panel-item-copy {
+    padding-top: 10px;
+  }
+  .icon-github {
+    width: 48px;
+    height: 48px;
+  }
 }
+
+@media (max-width:320px) {
+  .content-panel-item .bottom a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: none !important;
+  }
+}
+
