@@ -138,23 +138,23 @@ body {
   font-weight: $font-weight-light;
   font-size: $size;
   background: #061403;
-  color: $color-secondary-dark;
+  color: $color-secondary-darker;
 }
 
 a {
-  color: $color-secondary;
+  color: $color-secondary-dark;
 }
 a:focus,
 a:hover,
 a:visited {
-  color: $color-secondary-light;
+  color: $color-secondary;
 }
 a:active {
   color: $color-secondary-lighter;
 }
 
 b {
-  color: $color-secondary;
+  color: $color-secondary-dark;
 }
 
 q {
@@ -245,239 +245,33 @@ footer {
   padding: $size-lg;
   border-right: thin solid $color-secondary-darkest;
   border-left: thin solid $color-secondary-darkest;
-  background: $color-primary;
+  background: $color-primary-lighter;
 }
 
 .content-panel {
-  padding: $size-md;
+  padding: $size;
   border: thin solid transparent;
   border-radius: $size-sm;
   background: $color-dark;
 }
 
+.project.content-panel {
+  padding: $size $size 0 $size;
+}
+
 .content-panel-item {
   position: relative;
-  //margin-bottom: $size-md;
+  margin-bottom: $size;
   padding: $size;
   border-radius: $size-xs;
   text-align: center;
   min-height: 200px;
-
-  //border-top: .25px solid $color-primary-darker;
   border-right: 2px solid $color-primary-lightest;
   border-bottom: 2px solid $color-primary-lightest;
-  //border-left: .25px solid $color-primary-darker;
-
-  //background-color: $color-primary;
-  //background-image: none !important;
-  color: $color-secondary-light;
-  //transition: color 2s;
+  color: $color-secondary-dark;
 }
 .content-panel-item:hover {
   background-color: $color-primary-lightest;
-  //background-image: none !important;
-}
-
-.content-panel-item a {
-  text-decoration: none;
-  //color: $color-secondary-darker;
-}
-.content-panel-item a:focus,
-.content-panel-item a:hover,
-.content-panel-item a:visited  {
-  //color: $color-secondary;
-}
-.content-panel-item a:active {
-  //color: $color-secondary-lighter;
-}
-
-
-.bg-emds {
-  background: url(../img/logo-emds.png);
-  background-repeat: no-repeat;
-  background-position: center 50px;
-  background-size: 162px 43px;
-  background-color: $color-primary;
-  background-blend-mode: multiply;
-}
-.bg-emds a.top {
-  position: absolute;
-  left: 50%;
-  top: 50px;
-  transform:translateX(-50%);
-  display: block;
-  width: 162px;
-  height: 43px;
-  z-index: 999;
-}
-.bg-emds:hover {
-  background-color: $color-primary-lightest;
-  background-blend-mode: screen;
-}
-
-
-.bg-thanksmama {
-  //transition: color 2s;
-  background: url(../img/logo-tm.png);
-  background-repeat: no-repeat;
-  background-position: center 40px;
-  background-size: 200px 60px;
-  background-color: $color-primary;
-  background-blend-mode: multiply;
-}
-.bg-thanksmama:hover {
-  background-color: $color-primary-lightest;
-  background-blend-mode: screen;
-}
-
-.bg-thanksmama a.top {
-  position: absolute;
-  left: 50%;
-  top: 40px;
-  transform:translateX(-50%);
-  display: block;
-  width: 200px;
-  height: 60px;
-  z-index: 999;
-}
-
-.bg-golden {
-  background: url(../img/logo-golden.png);
-  background-repeat: no-repeat;
-  background-position: center 20px;
-  background-size: 116px 99px;
-  background-color: $color-primary;
-  background-blend-mode: multiply;
-}
-.bg-golden a.top {
-  position: absolute;
-  left: 50%;
-  top: 20px;
-  transform:translateX(-50%);
-  display: block;
-  width: 116px;
-  height: 99px;
-  z-index: 999;
-}
-.bg-golden:hover {
-  background-color: $color-primary-lightest;
-  background-blend-mode: screen;
-}
-
-.bg-italianway {
-  background: url(../img/logo-italianway.svg);
-  background-repeat: no-repeat;
-  background-position: center 60px;
-  background-size: 166px 35px;
-  background-color: $color-primary;
-  background-blend-mode: lighten;
-}
-.bg-italianway a.top {
-  position: absolute;
-  left: 50%;
-  top: 60px;
-  transform:translateX(-50%);
-  display: block;
-  width: 166px;
-  height: 35px;
-  z-index: 999;
-}
-.bg-italianway:hover {
-  background-color: $color-primary-lightest;
-  background-blend-mode: multiply;
-}
-
-.bg-backbone {
-  background: url(../img/logo-backbone.png);
-  background-repeat: no-repeat;
-  background-position: center 60px;
-  background-size: 200px 36px;
-  background-color: $color-primary;
-  background-blend-mode: multiply;
-}
-.bg-backbone a.top {
-  position: absolute;
-  left: 50%;
-  top: 60px;
-  transform:translateX(-50%);
-  display: block;
-  width: 200px;
-  height: 36px;
-  z-index: 999;
-}
-.bg-backbone:hover {
-  background-color: $color-primary-lightest;
-  background-blend-mode: normal;
-}
-
-.bg-angular {
-  background: url(../img/logo-angular.svg);
-  background-repeat: no-repeat;
-  background-position: center 51px;
-  background-size: 200px 54px;
-  background-color: $color-primary;
-  background-blend-mode: multiply;
-}
-.bg-angular a.top {
-  position: absolute;
-  left: 50%;
-  top: 51px;
-  transform:translateX(-50%);
-  display: block;
-  width: 200px;
-  height: 54px;
-  z-index: 999;
-}
-.bg-angular:hover {
-  background-color: $color-primary-lightest;
-  background-blend-mode: normal;
-}
-
-.bg-javascript {
-  padding-top: 60px;
-  background-color: $color-primary;
-}
-.bg-javascript a.top {
-  position: absolute;
-  left: 50%;
-  top: 60px;
-  transform:translateX(-50%);
-  display: block;
-  width: 260px;
-  height: 34px;
-  z-index: 999;
-}
-.bg-javascript:hover {
-  background-color: $color-primary-lightest;
-}
-
-.bg-lazy {
-  background: url(../img/logo-lazy.png);
-  background-repeat: no-repeat;
-  background-position: center 26px;
-  background-size: 122px 90px;
-  background-color: $color-primary;
-  background-blend-mode: multiply;
-}
-.bg-lazy a.top {
-  position: absolute;
-  left: 50%;
-  top: 26px;
-  transform:translateX(-50%);
-  display: block;
-  width: 122px;
-  height: 90px;
-  z-index: 999;
-}
-.bg-lazy:hover {
-  background-color: $color-primary-lightest;
-  background-blend-mode: normal;
-}
-
-
-
-.content-panel-item a.top:hover {
-  //cursor: crosshair;
 }
 
 .content-panel-item .bottom {
@@ -486,12 +280,6 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-.icon-github {
-  opacity: .5;
-  width: 64px;
-  height: 64px;
 }
 
 .content-panel-item .bottom a:hover .icon-github {
@@ -504,26 +292,141 @@ footer {
   line-height: 1;
 }
 
+.icon-github {
+  opacity: .5;
+  width: 64px;
+  height: 64px;
+}
 
+.content-panel-item a.top {
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  display: block;
+  z-index: 999;
+}
 
+.bg-emds {
+  background: $color-primary url(../img/logo-emds.png) center 50px/162px 43px no-repeat;
+  background-blend-mode: multiply;
+}
+.bg-emds:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: screen;
+}
+.bg-emds a.top {
+  top: 50px;
+  width: 162px;
+  height: 43px;
+}
 
+.bg-thanksmama {
+  background: $color-primary url(../img/logo-tm.png) center 40px/200px 60px no-repeat;
+  background-blend-mode: multiply;
+}
+.bg-thanksmama:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: screen;
+}
+.bg-thanksmama a.top {
+  top: 40px;
+  width: 200px;
+  height: 60px;
+}
 
+.bg-golden {
+  background: $color-primary url(../img/logo-golden.png) center 20px/116px 99px no-repeat;
+  background-blend-mode: multiply;
+}
+.bg-golden:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: screen;
+}
+.bg-golden a.top {
+  top: 20px;
+  width: 116px;
+  height: 99px;
+}
 
-/* https://css-tricks.com/almanac/properties/t/transform/ and animations
-use css animation here instead of jquery-ui
-*/
+.bg-italianway {
+  background: $color-primary url(../img/logo-italianway.svg) center 60px/166px 35px no-repeat;
+  background-blend-mode: lighten;
+}
+.bg-italianway:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: multiply;
+}
+.bg-italianway a.top {
+  top: 60px;
+  width: 166px;
+  height: 35px;
+}
+
+.bg-backbone {
+  background: $color-primary url(../img/logo-backbone.png) center 60px/200px 36px no-repeat;
+  background-blend-mode: multiply;
+}
+.bg-backbone:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: normal;
+}
+.bg-backbone a.top {
+  top: 60px;
+  width: 200px;
+  height: 36px;
+}
+
+.bg-angular {
+  background: $color-primary url(../img/logo-angular.svg) center 51px/200px 54px no-repeat;
+  background-blend-mode: multiply;
+}
+.bg-angular:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: normal;
+}
+.bg-angular a.top {
+  top: 51px;
+  width: 200px;
+  height: 54px;
+}
+
+.bg-javascript {
+  padding-top: 60px;
+  background-color: $color-primary;
+}
+.bg-javascript:hover {
+  background-color: $color-primary-lightest;
+}
+.bg-javascript a.top {
+  top: 60px;
+  width: 260px;
+  height: 34px;
+}
+
+.bg-lazy {
+  background: $color-primary url(../img/logo-lazy.png) center 26px/122px 90px no-repeat;
+  background-blend-mode: multiply;
+}
+.bg-lazy:hover {
+  background-color: $color-primary-lightest;
+  background-blend-mode: normal;
+}
+.bg-lazy a.top {
+  top: 26px;
+  width: 122px;
+  height: 90px;
+}
+
 .slide-left {
   transform: translate3d(-100px,0,0);
 }
-
 .slide-right {
   transform: translate3d(100px,0,0);
 }
-
 .slide-left,
 .slide-right {
   opacity: 0;
-  transition: all .75s cubic-bezier(0, 0, 0, 1.66);
+  transition: all 0.75s cubic-bezier(0, 0, 0, 1.66);
 }
 
 .in-view {
@@ -539,10 +442,12 @@ footer .content-panel-item {
   min-height: 1px;
 }
 
-.row .margin-bottom {
-  margin-bottom: $size-md;
-}
 
+
+
+/*=========================================
+                  vendor
+  ========================================= */
 .ui-accordion .ui-accordion-header {
   font-size: $size-md;
 }
@@ -560,6 +465,14 @@ footer .content-panel-item {
   margin-bottom: 0;
 }
 
+.ui-accordion .ui-accordion-icons {
+  padding-left: $size;
+}
+
+.ui-icon {
+  display: none;
+}
+
 .ui-accordion-content {
   padding: $size;
   margin: 0 11px -2px;
@@ -568,7 +481,7 @@ footer .content-panel-item {
   border-bottom-left-radius: 0;
   font-family: $font-family-primary;
   background: transparent;
-  color: $color-secondary-dark;
+  color: $color-secondary-darker;
 }
 
 .ui-state-default {
@@ -587,10 +500,6 @@ footer .content-panel-item {
   background-image: none !important;
 }
 
-.ui-icon {
-  display: none;
-}
-
 .ui-accordion-content a {
   text-decoration: underline;
   color: $color-secondary;
@@ -604,12 +513,14 @@ footer .content-panel-item {
   color: $color-secondary-lighter;
 }
 
+
+
+
+/*=========================================
+                  helpers
+  ========================================= */
 a.text-decoration-none {
   text-decoration: none;
-}
-
-.border-bottom-none {
-  //border-bottom: 0;
 }
 
 .border-right-none {
@@ -619,6 +530,7 @@ a.text-decoration-none {
 .hide {
   display: none;
 }
+
 .float-left {
   float: left;
 }
@@ -631,50 +543,22 @@ a.text-decoration-none {
   filter: FlipH;
 }
 
-.margin-right-xs {
-  margin-right: $size-xs;
-}
-
-.margin-left-xs {
-  margin-left: $size-xs;
-}
-
 .margin-top {
-  margin-top: $size-md;
+  margin-top: $size;
 }
 .margin-right {
-  margin-right: $size-md;
+  margin-right: $size;
 }
 .margin-bottom {
   margin-bottom: $size-md;
 }
-.margin-left {
-  margin-left: $size-md;
-}
-.margin-bottom-none {
-  margin-bottom: 0 !important;
-}
-.margin-bottom-lg {
-  margin-bottom: $size-lg;
-}
-.margin-left {
-  margin-left: $size-md;
-}
-.margin-bottom-hack {
-  margin-bottom: 0;
-}
-
 .margin-horizontal-none {
   margin-right: 0;
   margin-left: 0;
 }
 
-.padding {
-  padding: $size-md;
-}
-
-.padding-top {
-  padding-top: $size-md;
+.padding-bottom {
+  padding-bottom: $size;
 }
 
 .padding-horizontal-none {
@@ -696,14 +580,8 @@ a.text-decoration-none {
   text-align: center;
 }
 
-@media (max-width:990px) {
-  .margin-bottom-hack {
-    margin-bottom: $size-lg;
-  }
-}
-
 @media (max-width:768px) {
-  .temp-hack {
+  .hide-sm {
     display: none;
   }
 }
@@ -718,28 +596,31 @@ a.text-decoration-none {
   li,
   p,
   q {
-    font-size: $size-sm !important;
+    font-size: $size !important;
   }
 
-  .logo {
-    //min-height: 112px !important;
+  .content {
+    padding: 1rem;
   }
 
   .content-panel-item-copy {
     padding-top: 10px;
   }
+
   .icon-github {
     width: 48px;
     height: 48px;
+  }
+
+  .ui-accordion .ui-accordion-content {
+    padding: $size;
+    border-top: 0;
+    overflow: auto;
   }
 }
 
 @media (max-width:320px) {
   .content-panel-item .bottom a {
-    text-align: center;
-    width: 48px;
-    height: 48px;
-    float: none !important;
+    display: none;
   }
 }
-
