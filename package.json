@@ -12,12 +12,13 @@
     "autoprefixer": "^6.3.7",
     "cssnano": "^3.7.3",
     "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-postcss": "^0.8.0",
-    "grunt-uncss": "^0.6.0",
     "grunt-w3c-html-validation": "^0.1.8",
-    "postcss-sorting": "^1.6.1",
-    "postcss-color-rgba-fallback": "^2.2"
+    "postcss-color-rgba-fallback": "^2.2",
+    "postcss-sorting": "^1.6.1"
   }
 }
