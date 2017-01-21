@@ -66,7 +66,7 @@ $font-weight-bold:   700;
 html {
   box-sizing: border-box;
   font-size: $size-root;
-  -webkit-tap-highlight-color: transparent;
+  //-webkit-tap-highlight-color: transparent;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -131,10 +131,10 @@ th {
 /*=========================================
                   custom
   ========================================= */
-::selection {
-  background: rgba(255,255,255,.5);
-  color: rgba(0,0,0,.5);
-}
+// ::selection {
+//   background: rgba(255,255,255,.5);
+//   color: rgba(0,0,0,.5);
+// }
 
 :focus {
   outline-color: $color-secondary-darkest !important;
@@ -414,7 +414,7 @@ aside:nth-child(odd) a:nth-child(3) {
 
 aside:nth-child(odd) a:nth-child(3) img {
   transform: scaleX(-1);
-  filter: FlipH;
+  //filter: FlipH;
 }
 
 aside  p {

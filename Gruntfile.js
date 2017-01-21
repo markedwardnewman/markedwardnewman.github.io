@@ -56,7 +56,7 @@ module.exports = function(grunt) {
         ]
       },
       dist: {
-        src: 'assets/css/bundled.css'
+        src: 'assets/css/main.css'
       }
     },
 
