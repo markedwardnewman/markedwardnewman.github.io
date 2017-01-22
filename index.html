@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en-us">
+<!-- Hi!  My portfolio was developed using pure javascript and no css classes, just for kicks!  It's all rendered using only the code below.  Please enjoy!-->
 <head>
   <title>Mark Newman's Portfolio</title>
   <meta charset="utf-8">
@@ -9,11 +10,332 @@
   <meta name="keywords" content="front-end, frontend, web developer, html, css, javascript, jQuery, responsive, mobile-first">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="OYDloiCAqWDdnETp3nJUcvr6fTsJHSbKTwCG6xVWZzg">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700%7CRoboto+Slab:700" type='text/css'>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700%7CRoboto+Slab:700" type="text/css">
+  <!-- <link rel="stylesheet" href="assets/css/main.css" type="text/css"> -->
+  <link rel="author" href="humans.txt" type="text/css">
   <link rel="icon" href="apple-touch-icon.png" type="image/apple-touch-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="author" href="humans.txt">
+  <style type="text/css">
+    html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 2vh; }
+
+    *, *:before, *:after {
+      box-sizing: inherit; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      background-image: url("../img/jungle.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right center;
+      background-attachment: fixed;
+      background-color: #061403;
+      color: rgba(205, 223, 207, .87); }
+
+    h1 {
+      margin: 0;
+      padding: 1rem;
+      border-top: 1px solid rgba(205, 223, 207, .37);
+      border-right: 3px solid rgba(0, 0, 0, 0.86);
+      border-left: 1px solid rgba(205, 223, 207, .37);
+      font-family: "Roboto Slab", sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1;
+      text-align: center;
+      background-color: #100808;
+      background: linear-gradient(to top right, #643232, #100808); }
+
+    h2 {
+      margin: 0;
+      padding: 1rem;
+      border: thin solid rgba(205, 223, 207, .67);
+      font-family: "Roboto Slab", sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1;
+      text-align: center;
+      background-color: #100808; }
+
+    h3 {
+      position: relative;
+      margin: 0;
+      padding: 1rem;
+      border-top: 1px solid rgba(205, 223, 207, .37);
+      border-right: 3px solid rgba(0, 0, 0, 0.86);
+      border-bottom: 4px solid rgba(0, 0, 0, 0.86);
+      border-left: 1px solid rgba(205, 223, 207, .25);
+      border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+      font-family: "Roboto Slab", sans-serif;
+      font-weight: 700;
+      line-height: 1;
+      background-color: rgba(100, 50, 50, .93);
+      background: linear-gradient(to bottom right, #492424, #643232); }
+
+    h3:last-child {
+      margin: 0 0 -4px 0; }
+
+    h3:before {
+      content: '\25B6';
+      float: left;
+      margin-right: 5px;
+      transition: 0.4s ease-out; }
+
+    h3.active {
+      border-top: 1px solid rgba(205, 223, 207, .67);
+      border-bottom: 4px solid rgba(0, 0, 0, 0.54);
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.86);
+      background-color: rgba(100, 50, 50, 1); }
+
+    h3.active:before {
+      transform: rotate(90deg); }
+
+    h3:hover {
+      background: #492424;
+      cursor: pointer; }
+
+    a {
+      color: rgba(205, 223, 207, .67); }
+
+    a:focus,
+    a:hover,
+    a:visited {
+      color: rgba(205, 223, 207, .87); }
+
+    a:active {
+      color: rgba(205, 223, 207, 1); }
+
+    p {
+      margin: 0;
+      padding: 1rem 0 1rem 0;
+      line-height: 1.5;
+      font-size: 1.5rem;
+      color: rgba(205, 223, 207, .37); }
+
+    img {
+      border: 0;
+      vertical-align: middle; }
+
+    header {
+      margin: 0 17%;
+      display: flex;
+      flex-flow: row wrap-reverse; }
+
+    header h1 {
+      flex: 2;
+      order: 2; }
+
+    header nav {
+      flex: 3;
+      order: 1;
+      display: flex;
+      align-items: flex-end; }
+
+    header > nav > a {
+      flex: 1;
+      padding: 0.75rem;
+      border-top: 1px solid rgba(205, 223, 207, .37);
+      border-right: 3px solid rgba(0, 0, 0, 0.86);
+      border-left: 1px solid rgba(205, 223, 207, .25);
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 1rem;
+      text-decoration: none;
+      text-align: center;
+      background-color: rgba(100, 50, 50, .93);
+      background: linear-gradient(to bottom right, #492424, #643232);
+      color: rgba(205, 223, 207, 1); }
+
+    header nav a:focus,
+    header nav a:hover {
+      background: linear-gradient(to bottom right, #492424, #492424); }
+
+    header nav a:active {
+      background-color: rgba(100, 50, 50, 1); }
+
+    section,
+    footer {
+      margin: 0 15%;
+      box-sizing: inherit; }
+
+    section > div {
+      margin: 0 2.5%;
+      padding: 1rem 2.5% 1rem 2.5%;
+      border-right: thin solid rgba(205, 223, 207, .37);
+      border-left: thin solid rgba(205, 223, 207, .37);
+      background-color: rgba(100, 50, 50, .5); }
+
+    h3 + div {
+      max-height: 0;
+      margin: 0 1.25%;
+      padding: 0 2.5% 0 2.5%;
+      border-right: thin solid rgba(205, 223, 207, .37);
+      border-left: thin solid rgba(205, 223, 207, .37);
+      background-color: rgba(0, 0, 0, 0.86);
+      overflow: hidden;
+      transition: max-height 0.2s ease-out; }
+
+    h3 span {
+      position: absolute;
+      transition: 0.4s;
+      top: 50%;
+      left: 3rem;
+      transform: translate(0, -50%);
+      text-align: left; }
+
+    h3.active span {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center; }
+
+    h3.active:last-of-type + div {
+      border-bottom: thin solid rgba(205, 223, 207, .37);
+      border-radius: 0 0 0.5rem 0.5rem; }
+
+    section:nth-child(3) > div {
+      padding: 0.5rem 1.25% 0.5rem 1.25%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+
+    section:nth-child(3) div {
+      overflow: hidden; }
+
+    div aside.slide-in {
+      transform: translateX(0);
+      transition: 0.8s cubic-bezier(0.38, -0.55, 0.27, 1.25); }
+
+    aside {
+      flex: 1 47.5%;
+      min-height: 205px;
+      margin: 0.5rem 1.25% 0.5rem 1.25%;
+      padding: 1rem 2.5% 1rem 2.5%;
+      border-top: 1px solid rgba(205, 223, 207, .37);
+      border-right: 3px solid rgba(0, 0, 0, 0.86);
+      border-bottom: 4px solid rgba(0, 0, 0, 0.86);
+      border-left: 1px solid rgba(205, 223, 207, .25);
+      border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+      text-align: center;
+      background-color: rgba(100, 50, 50, .93);
+      background: radial-gradient(#643232 25%, #492424 75%);
+      transition: 0.2s cubic-bezier(0.38, -0.55, 0.27, 1.25);
+      display: flex;
+      flex-flow: column wrap; }
+
+    aside:hover {
+      border-top: 1px solid rgba(205, 223, 207, .67);
+      border-left: 1px solid rgba(205, 223, 207, .37);
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.86);
+      background-color: rgba(100, 50, 50, 1);
+      background: radial-gradient(#643232 25%, #643232 75%); }
+
+    aside h3 {
+      display: none; }
+
+    aside:nth-child(odd) {
+      transform: translateX(-110%); }
+
+    aside:nth-child(even) {
+      transform: translateX(110%); }
+
+    aside:nth-child(odd) a:first-of-type {
+      order: 2; }
+
+    aside:nth-child(odd) a:last-of-type {
+      order: 1;
+      align-self: flex-start; }
+
+    aside:nth-child(odd) a:last-of-type img {
+      transform: scaleX(-1); }
+
+    aside:nth-child(even) a:first-of-type {
+      order: 2; }
+
+    aside:nth-child(even) a:last-of-type {
+      order: 1;
+      align-self: flex-end; }
+
+    aside img {
+      opacity: .5;
+      transition: .2s; }
+
+    aside a:hover img {
+      opacity: 1; }
+
+    aside a:first-of-type img {
+      width: auto;
+      height: 60px; }
+
+    aside p {
+      order: 3;
+      font-size: 1rem; }
+
+    section:last-of-type > div > div {
+      position: relative;
+      text-decoration: none; }
+
+    section:last-of-type a {
+      position: absolute;
+      width: 25%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-decoration: none; }
+
+    section:last-of-type > div > div a img {
+      width: 80%;
+      height: 80%;
+      opacity: .33;
+      transition: 0.4s cubic-bezier(0.38, -0.55, 0.27, 1.25); }
+
+    section:last-of-type > div > div a:hover img {
+      transform: translate(-10%, 0);
+      width: 100%;
+      height: 100%;
+      opacity: .66; }
+
+    section:last-of-type ul {
+      margin: 0;
+      padding: 1rem 0 1rem 0;
+      list-style-type: none; }
+
+    li {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      font-size: 1.5rem;
+      color: rgba(205, 223, 207, .37); }
+
+    li:last-child {
+      padding-bottom: 0; }
+
+    footer {
+      position: relative;
+      padding: 0 0 1rem 0;
+      border: thin solid rgba(205, 223, 207, .67);
+      background-color: #100808;
+      color: rgba(205, 223, 207, .87);
+      text-align: center; }
+
+    footer h2 {
+      border: initial; }
+
+    footer a:first-of-type {
+      display: block;
+      margin-bottom: 1rem; }
+
+    footer img {
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      top: 1rem;
+      right: 1rem; }
+  </style>
 </head>
 <body>
   <header>
@@ -33,7 +355,7 @@
             <strong>This site is <i>responsive</i></strong>. If you are feint of heart please <i>do not</i> resize your browser.
           </p>
           <p><!-- https://validator.w3.org/unicorn/ -->
-            Current <b>full site</b> and/or <b>single-page application (SPA)</b> front-end development practices incorporate <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fmarkedwardnewman.com%2F&showoutline=yes" target="_blank"><b>W3C's semantic markup</b></a> standards, <b>Google’s Material Design</b> guidelines and frameworks suitable for the task/s at hand. <b>Node.js</b>, <b>npm</b>, and <b>grunt</b> are still this week's development flavors.  Conversly, I almost always code the essentials (<b>HTML5</b>, <b>CSS3</b> and <b>javaScript</b> | <b>jQuery</b>) using either Sublime or Notepad++ (and sometimes both).
+            Delivering <b>platform-independent</b>, <b>responsive</b>, <b>sleek</b>, and <b>easily modified</b>, fully functional <b>sites</b> and / or <b>single-page applications</b> (<b>SPA</b>).  Stellar front-end habits that blend  <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fmarkedwardnewman.com%2F&showoutline=yes" target="_blank"><b>W3C's semantic markup</b></a> standards with <b>Google’s Material Design</b> guidelines using <em>frameworks that are suitable for the tasks at hand</em>. <b>Node.js</b>, <b>npm</b>, and <b>grunt</b> are are staples, but am just as comfortable with <b>LAMP/WAMP</b>. Professional experience with <b>backbone.js</b>, currently tackling <b>Angular2</b>.
           </p>
         </div>
       <h3>&nbsp;<span>Back End Development</span></h3>
@@ -62,7 +384,7 @@
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          html, less, css, bootstrap, javascript, jQuery
+          html, less, bootstrap, js, jQuery
         </p>
       </aside>
       <aside>
@@ -74,7 +396,7 @@
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          drupal - php - html - less - css - bootstrap - javascript - jQuery
+          drupal, php, html, less, bootstrap, js, jQuery
         </p>
       </aside>
       <aside>
@@ -86,7 +408,7 @@
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          ruby on rails - erb - html - javascript - jQuery - sass - css - bootstrap - google maps API
+          ruby on rails, erb, html, js, jQuery, sass, bootstrap,  google maps API
         </p>
       </aside>
       <aside>
@@ -98,7 +420,7 @@
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          html - less - css - javascript - jQuery - backbone.js - underscore.js
+          html, sass, js, jQuery, backbone.js, underscore.js
         </p>
       </aside>
       <aside>
@@ -110,7 +432,7 @@
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          html - less - css - javascript - jQuery - backbone.js - underscore.js
+          html, sass, js, jQuery, backbone.js, underscore.js
         </p>
       </aside>
       <aside>
@@ -122,7 +444,7 @@
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          asynchronous theaded java - xml - google adwords API - Android Studio
+          asynchronous, java, google adwords API, Android Studio
         </p>
       </aside>
       <aside>
@@ -134,7 +456,7 @@
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          html - javascript - jQuery
+          my snippet library
         </p>
       </aside>
       <aside>
@@ -146,7 +468,7 @@
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          html - javascript - AngularJS
+          angularJS example hosted on heroku, learning angular 2
         </p>
       </aside>
     </div>
@@ -168,6 +490,9 @@
           <li>VB.NET</li>
           <li>Oracle's SQL</li>
         </ul>
+        <a href="https://github.com/markedwardnewman" target="_blank">
+          <img src="assets/img/logo-github.svg" alt="github logo">
+        </a>
       </div>
       <h3>&nbsp;<span>Development Tools</span></h3>
       <div>
@@ -181,6 +506,9 @@
           <li>Visual Studio</li>
           <li>VMware&nbsp;-&nbsp;VirtualBox</li>
         </ul>
+        <a href="https://github.com/markedwardnewman" target="_blank">
+          <img src="assets/img/logo-github.svg" alt="github logo">
+        </a>
       </div>
       <h3>&nbsp;<span>Development Environments</span></h3>
       <div>
@@ -194,20 +522,22 @@
           <li>Heroku</li>
           <li>Red Hat's OpenShift</li>
         </ul>
+        <a href="https://github.com/markedwardnewman" target="_blank">
+          <img src="assets/img/logo-github.svg" alt="github logo">
+        </a>
       </div>
     </div>
   </section>
   <footer>
     <h2>Contact</h2>
+    <a href="assets/misc/MarkNewmanResume.docx">resume</a>
     <a href="https://www.linkedin.com/in/markedwardnewman" title="linkedIn" target="_blank"><img src="assets/img/logo-linkedin.png" alt="logo"></a>
-    Download my <a href="assets/misc/MarkNewmanResume.docx">resume</a> for contact information
-    <br>
     <a href="mailto:markedwardnewman@gmail.com" title="markedwardnewman@gmail.com">markedwardnewman@gmail.com</a>
   </footer>
 <script>
 document.addEventListener("DOMContentLoaded", function(event) {
+    var sliders = document.getElementsByTagName("aside");
     var accordion = document.querySelectorAll("#about h3, #skills h3");
-    var sliders = document.querySelectorAll("#projects aside");
     window.addEventListener("scroll", slide(sliders));
     (function() {
         for (var i = 0; i < accordion.length; i++) {
@@ -236,8 +566,10 @@ function toggleAccordion() {
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
+        panel.style.color = 'red';
     } else {
-        panel.style.maxHeight = panel.scrollHeight + 'px';
+        panel.style.maxHeight = (panel.scrollHeight - 3) + 'px';
+        //panel.style.color = 'red';
     }
 }
 </script>

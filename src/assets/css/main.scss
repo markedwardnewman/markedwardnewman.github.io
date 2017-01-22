@@ -59,98 +59,100 @@ $font-weight-bold:   700;
 
 
 
-
-/*=========================================
-                  normalize
-  ========================================= */
 html {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-size: $size-root;
-  //-webkit-tap-highlight-color: transparent;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-html,
-body,
-h1, h2, h3, h4, h5, h6,
-hr,
-ul,
-li,
-input,
-select,
-textarea,
-button,
-a {
-  margin: 0;
-  padding: 0;
-  line-height: $line-height;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-  line-height: $line-height * 1.5;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid hsla(62,89%,89%,.16);
-  margin: $size-md 0;
-}
-
-img {
-  border: 0;
-  vertical-align: middle;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-li:last-child {
-  padding-bottom: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-}
-
-
-
-
-/*=========================================
-                  custom
-  ========================================= */
-// ::selection {
-//   background: rgba(255,255,255,.5);
-//   color: rgba(0,0,0,.5);
-// }
-
-:focus {
-  outline-color: $color-secondary-darkest !important;
-}
-
 body {
+  margin: 0;
+  padding: 0;
+  //line-height: $line-height;
   font-family: $font-family-primary;
   font-weight: $font-weight-light;
-  font-size: $size;
+  //font-size: $size;
   background-image: url("../img/jungle.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
   background-attachment: fixed;
   background-color: #061403;
-  color: $color-secondary-lightest;
+  color: $color-secondary-darker;
+}
+
+h1 {
+  margin: 0;
+  padding: $size;
+  border-top: 1px solid $color-secondary-lighter;
+  border-right: 3px solid $color-dark;
+  border-left: 1px solid $color-secondary-lighter;
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-bold;
+  font-size: $size-lg;
+  line-height: $line-height;
+  text-align: center;
+  background-color: $color-dark-hex;
+  background: linear-gradient(to top right, $color-primary-hex, $color-dark-hex);
+}
+
+h2 {
+  margin: 0;
+  padding: $size;
+  border: thin solid $color-secondary;
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-bold;
+  font-size: $size-lg;
+  line-height: $line-height;
+  text-align: center;
+  background-color: $color-dark-hex;
+}
+
+h3 {
+  position: relative;
+  margin: 0;
+  padding: $size;
+  border-top: 1px solid $color-secondary-lighter;
+  border-right: 3px solid $color-dark;
+  border-bottom: 4px solid $color-dark;
+  border-left: 1px solid $color-secondary-lightest;
+  border-radius: $size-xs $size-xs $size-xs $size-xs;
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-bold;
+  line-height: $line-height;
+  background-color: $color-primary-darker;
+  background: linear-gradient(to bottom right, $color-primary-hex-darker, $color-primary-hex);
+}
+
+h3:last-child {
+  margin: 0 0 -4px 0;
+}
+
+h3:before {
+  content: '\25B6';
+  float: left;
+  margin-right: 5px;
+  transition: 0.4s ease-out;
+}
+
+h3.active {
+  border-top: 1px solid $color-secondary;
+  border-bottom: 4px solid $color-grey-dark;
+  box-shadow: 4px 4px 2px $color-dark;
+  background-color: $color-primary-darkest;
+}
+
+h3.active:before {
+  transform: rotate(90deg);
+}
+
+h3:hover {
+  background: $color-primary-hex-darker;
+  cursor: pointer;
 }
 
 a {
@@ -165,40 +167,17 @@ a:active {
   color: $color-secondary-darkest;
 }
 
-q {
+p {
+  margin: 0;
+  padding: $size 0 $size 0;
+  line-height: $line-height * 1.5;
   font-size: $size-md;
-  font-style: italic !important;
+  color: $color-secondary-lighter;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family-secondary;
-  font-weight: $font-weight-bold;
-  color: $color-secondary-darker;
-}
-
-h1 {
-  padding: $size;
-  border-bottom: 0;
-  font-size: $size-lg;
-  text-align: center;
-  border-top: 1px solid $color-secondary-lighter;
-  border-right: 3px solid $color-dark;
-  border-left: 1px solid $color-secondary-lightest;
-  background-color: $color-primary-darker;
-  background: linear-gradient(to top right, $color-primary-hex, $color-dark-hex);
-}
-
-h2 {
-  padding: $size;
-  border: thin solid $color-secondary;
-  font-size: $size-lg;
-  text-align: center;
-  background-color: $color-dark-hex;
-}
-
-section,
-footer {
-  margin: 0 15%;
+img {
+  border: 0;
+  vertical-align: middle;
 }
 
 header {
@@ -207,36 +186,31 @@ header {
   flex-flow: row wrap-reverse;
 }
 
-header > * {
+header h1 {
   flex: 2;
   order: 2;
 }
 
-header > nav {
+header nav {
   flex: 3;
   order: 1;
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
 }
 
 header > nav > a {
   flex: 1;
   padding: $size-sm;
+  border-top: 1px solid $color-secondary-lighter;
+  border-right: 3px solid $color-dark;
+  border-left: 1px solid $color-secondary-lightest;
   font-family: $font-family-secondary;
   font-size: $size;
   text-decoration: none;
   text-align: center;
-  border-top: 1px solid $color-secondary-lighter;
-  border-right: 3px solid $color-dark;
-  border-left: 1px solid $color-secondary-lightest;
   background-color: $color-primary-darker;
   background: linear-gradient(to bottom right, $color-primary-hex-darker, $color-primary-hex);
   color: $color-secondary-darkest;
-}
-
-header > nav > a:first-child {
-  border-radius: 8px 0 0 0;
 }
 
 header nav a:focus,
@@ -248,6 +222,12 @@ header nav a:active {
   background-color: $color-primary-darkest;
 }
 
+section,
+footer {
+  margin: 0 15%;
+  box-sizing: inherit;
+}
+
 section > div {
   margin: 0 2.5%;
   padding: $size 2.5% $size 2.5%;
@@ -256,64 +236,21 @@ section > div {
   background-color: $color-primary-light;
 }
 
-h3:before {
-  content: '\25B6';
-  float: left;
-  margin-right: 5px;
-  transition: 0.4s ease-out;
-}
-
-h3.active:before {
-  transform: rotate(90deg);
-}
-
-h3 {
-  position: relative;
-  padding: $size;
-  border-top: 1px solid $color-secondary-lighter;
-  border-right: 3px solid $color-dark;
-  border-bottom: 4px solid $color-dark;
-  border-left: 1px solid $color-secondary-lightest;
-  border-radius: 8px 8px 8px 8px;
-  background-color: $color-primary-darker;
-  background: linear-gradient(to bottom right, $color-primary-hex-darker, $color-primary-hex);
-}
-
-h3.active {
-  border-top: 1px solid $color-secondary;
-  border-bottom: 4px solid $color-grey-dark;
-  box-shadow: 4px 4px 2px $color-dark;
-  background-color: $color-primary-darkest;
-}
-
-h3:hover {
-  background: $color-primary-hex-darker;
-  //background: linear-gradient(to bottom right, $color-primary-hex-darker, $color-primary-hex-darker);
-  cursor: pointer;
-}
-
-h3:last-child {
-  margin: 0 0 -4px 0;
-}
-
 h3 + div {
+  max-height: 0;
   margin: 0 1.25%;
   padding: 0 2.5% 0 2.5%;
   border-right: thin solid $color-secondary-lighter;
   border-left: thin solid $color-secondary-lighter;
+
   background-color: $color-dark;
-  max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
-h3.active + div {
-  margin: 0 1.25%;
-}
-
 h3 span {
-  transition: 0.4s;
   position: absolute;
+  transition: 0.4s;
   top: 50%;
   left: $size-xl;
   transform: translate(0, -50%);
@@ -326,70 +263,53 @@ h3.active span {
   text-align: center;
 }
 
-p {
-  padding: $size 0 $size 0;
-  font-size: $size-md;
-  color: $color-secondary-lighter;
+h3.active:last-of-type + div {
+  border-bottom: thin solid $color-secondary-lighter;
+  border-radius: 0 0 $size-xs $size-xs;
 }
 
-#projects > div {
+section:nth-child(3) > div {
   padding: $size-xs 1.25% $size-xs 1.25%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-#projects div {
+section:nth-child(3) div {
   overflow: hidden;
 }
 
-#projects aside:nth-child(odd) {
-  transform: translateX(-110%);
-}
-
-#projects aside:nth-child(even) {
-  transform: translateX(110%);
-}
-
-#projects aside.slide-in {
+div aside.slide-in {
   transform: translateX(0);
   transition: 0.8s cubic-bezier(.38, -0.55, 0.27, 1.25);
 }
 
 aside {
   flex: 1 47.5%;
+
+  min-height: 205px;
   margin: $size-xs 1.25% $size-xs 1.25%;
-  padding: $size 2.5% 0 2.5%;
-  text-align: center;
-  position: relative;
-
-  display: flex;
-  flex-flow: column wrap;
-
+  padding: $size 2.5% $size 2.5%;
   border-top: 1px solid $color-secondary-lighter;
   border-right: 3px solid $color-dark;
   border-bottom: 4px solid $color-dark;
   border-left: 1px solid $color-secondary-lightest;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: $size-xs $size-xs $size-xs $size-xs;
+
+  text-align: center;
 
   background-color: $color-primary-darker;
   background: radial-gradient($color-primary-hex 25%, $color-primary-hex-darker 75%);
-
   transition: 0.2s cubic-bezier(.38, -0.55, 0.27, 1.25);
+
+  display: flex;
+  flex-flow: column wrap;
 }
 
 aside:hover {
   border-top: 1px solid $color-secondary;
-  //border-right: 3px solid $color-dark;
-  //border-bottom: 4px solid $color-dark;
   border-left: 1px solid $color-secondary-lighter;
-  //border-radius: 8px 8px 8px 8px;
   box-shadow: 4px 4px 2px $color-dark;
-
-  //background-color: $color-primary-hex-darker;
-  //background: radial-gradient($color-primary-hex 25%, $color-primary-hex-darker 75%);
-
-  //box-shadow: 4px 4px 2px $color-dark;
   background-color: $color-primary-darkest;
   background: radial-gradient($color-primary-hex 25%, $color-primary-hex 75%);
 }
@@ -398,45 +318,34 @@ aside h3 {
   display: none;
 }
 
-#projects a {
-  //display: inline-block;
-  vertical-align: top;
+aside:nth-child(odd) {
+  transform: translateX(-110%);
 }
 
-aside:nth-child(odd) a:nth-child(2) {
+aside:nth-child(even) {
+  transform: translateX(110%);
+}
+
+aside:nth-child(odd) a:first-of-type {
   order: 2;
 }
 
-aside:nth-child(odd) a:nth-child(3) {
+aside:nth-child(odd) a:last-of-type {
   order: 1;
   align-self: flex-start;
 }
 
-aside:nth-child(odd) a:nth-child(3) img {
+aside:nth-child(odd) a:last-of-type img {
   transform: scaleX(-1);
-  //filter: FlipH;
 }
 
-aside  p {
-  order: 3;
-}
-
-aside:nth-child(even) a:nth-child(2) {
+aside:nth-child(even) a:first-of-type {
   order: 2;
 }
 
-aside:nth-child(even) a:nth-child(3) {
+aside:nth-child(even) a:last-of-type {
   order: 1;
   align-self: flex-end;
-}
-
-
-
-
-aside a:nth-child(3) {
-  //background-color: pink !important;
-  margin: 0 0 0 $size;
-
 }
 
 aside img {
@@ -448,13 +357,64 @@ aside a:hover img {
   opacity: 1;
 }
 
+aside a:first-of-type img {
+  width: auto;
+  height: 60px;
+}
+
 aside p {
-  display: block;
-  font-size: $size-sm;
-  color: $color-secondary-light;
+  order: 3;
+  font-size: $size;
+}
+
+section:last-of-type > div > div  {
+  position: relative;
+  text-decoration: none;
+}
+
+section:last-of-type a {
+  position: absolute;
+  width: 25%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+
+section:last-of-type > div > div a img {
+  width: 80%;
+  height: 80%;
+  opacity: .33;
+  transition: 0.4s cubic-bezier(.38, -0.55, 0.27, 1.25);
+}
+
+section:last-of-type > div > div a:hover img {
+  transform: translate(-10%, 0);
+  width: 100%;
+  height: 100%;
+  opacity: .66;
+}
+
+section:last-of-type ul {
+  margin: 0;
+  padding: $size 0 $size 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  line-height: $line-height * 1.5;
+  font-size: $size-md;
+  color: $color-secondary-lighter;
+}
+
+li:last-child {
+  padding-bottom: 0;
 }
 
 footer {
+  position: relative;
   padding: 0 0 $size 0;
   border: thin solid $color-secondary;
   background-color: $color-dark-hex;
@@ -462,12 +422,21 @@ footer {
   text-align: center;
 }
 
-footer > *:first-child {
+footer h2 {
   border: initial;
 }
 
-.icon-linkedin {
+footer a:first-of-type {
+  display: block;
+  margin-bottom: $size;
+}
+
+footer img {
+  position: absolute;
   width: 27px;
   height: 27px;
+  top: $size;
+  right: $size;
+  //margin: $size $size 0 0;
 }
 
