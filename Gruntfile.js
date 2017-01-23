@@ -49,10 +49,10 @@ module.exports = function(grunt) {
           require('autoprefixer')(),
 
           //Adds hexadecimal fallback colors when rgba colors are specified 
-          require('postcss-color-rgba-fallback')(),
+          require('postcss-color-rgba-fallback')()
 
           //Minify css       
-          require('cssnano')()
+          //require('cssnano')()
         ]
       },
       dist: {

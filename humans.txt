@@ -2,10 +2,9 @@
 # The humans responsible & technology colophon
 
 # TEAM
-	  Mark Newman
+	  Mark Newman - markedwardnewman@gmail.com
 
 # THANKS
-
     mom!
 
 # TECHNOLOGY COLOPHON
@@ -18,7 +17,7 @@
     Doctype:
         W3C Valid HTML5
     Compatibility:
-        Mobile-first / Responsive
+        All major browsers within the past 4 years / Mobile-first / Responsive
     Optimization:
         Optimized for load speed
     SEO:
@@ -26,10 +25,8 @@
     Fonts:
         Roboto          :300,700
         Roboto Slab     :700
-        Source Code Pro :300
     Code Libraries used:
-        Bootstrap-CDN
-        JQuery- CDN
+        null
     Local tools:
         Notepad++
         Chrome Developer tools
@@ -37,11 +34,7 @@
         First LESS, then SASS pre-processors
         Git Bash / npm / grunt
     Online tools:
-        Tidy : http://www.dirtymarkup.com/, then grunt cssnano
         https://validator.w3.org/, then grunt 
-        ColorZilla
-        FileZilla
         Viewport Dimensions by www.cswapps.com
         Github
         
-    
