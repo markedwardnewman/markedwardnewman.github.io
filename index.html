@@ -1,20 +1,30 @@
 <!doctype html>
 <html lang="en-us">
-<!-- Hi!
-
-A spat of framework fatigue and a recent re-reading of motherfuckingwebsite.com are the inspirations behind this particular version of my portfolio.  Behold!...
-
-  + No frameworks are used- all code used remain within this HTML file
-  + It's Flexbox responsive without having to use media-queries
-  + To keep it as semantically pure as possible, no css class names are used- styling declarations are limited to element selectors
-  + It makes a darn good DOM outline.  Check out the link found under the "Front End Web Development" tab to see it in action!
-
-And thanks for viewing!
-
--->
 <head>
   <title>Mark Newman's Portfolio</title>
   <meta charset="utf-8">
+  
+  
+  
+  
+  <!-- Hi!
+  A spat of framework fatigue coupled with a challenge to myself inspired this particular version of my portfolio.  Behold!...
+
+    + No frameworks are used- all code used to render this page is on this page* (see Recent Projects for examples that do use frameworks)
+    + It's completely responsive without the use of media-queries
+    + It's completely cross-browser compatible and platform independent
+    + Only vanilla javascript is used
+    + No CSS class names are used- styling declarations are limited to element selectors and pseudo-selectors.  The three IDs are for anchor linking.
+    + It makes a darn good DOM outline.  Check out the link found under the "Front End Web Development" tab to see it in action!
+    
+    The git icons link to the respective project's source code.  If the link doesn't do anything it means public access has yet to be authorized.  Also, we code manglers need a day off every now and then, so I opted for readability over minification.  Please enjoy and thanks for viewing!
+
+  *Aside from the font link and Google Analytics hook
+  Bye! -->
+  
+  
+  
+  
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="author" content="Mark Newman">
   <meta name="description" content="Mark Newman's Portfolio - Front End Web Developer - Austin.Texas | My meta-skills, Github source code, and recent projects">
@@ -474,6 +484,18 @@ And thanks for viewing!
     <h2>Recent Projects</h2>
     <div>
       <aside>
+        <h3>Full Site - ItalianWay</h3>
+        <a href="https://en.italianway.house/" target="_blank">
+          <img src="assets/img/logo-italianway.png" alt="logo">
+        </a>
+        <a>
+          <img src="assets/img/logo-github.png" alt="github logo">
+        </a>
+        <p>
+          <b>SITE:</b> ruby on rails, erb, html, js, jQuery, sass, bootstrap,  google maps API
+        </p>
+      </aside>
+      <aside>
         <h3>Full Site - Thanks Mama</h3>
         <a href="https://www.thanksmama.com/" target="_blank">
           <img src="assets/img/logo-thanksmama.png" alt="logo">
@@ -482,7 +504,7 @@ And thanks for viewing!
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          html, less, bootstrap, js, jQuery
+          <b>SITE:</b> html, less, bootstrap, js, jQuery
         </p>
       </aside>
       <aside>
@@ -494,19 +516,7 @@ And thanks for viewing!
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          drupal, php, html, less, bootstrap, js, jQuery
-        </p>
-      </aside>
-      <aside>
-        <h3>Full Site - ItalianWay</h3>
-        <a href="https://en.italianway.house/" target="_blank">
-          <img src="assets/img/logo-italianway.png" alt="logo">
-        </a>
-        <a>
-          <img src="assets/img/logo-github.png" alt="github logo">
-        </a>
-        <p>
-          ruby on rails, erb, html, js, jQuery, sass, bootstrap,  google maps API
+          <b>SITE:</b> drupal, php, html, less, bootstrap, js, jQuery
         </p>
       </aside>
       <aside>
@@ -518,7 +528,7 @@ And thanks for viewing!
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          html, sass, js, jQuery, backbone.js, underscore.js
+          <b>SPA:</b> html, sass, js, jQuery, backbone.js, underscore.js
         </p>
       </aside>
       <aside>
@@ -530,7 +540,7 @@ And thanks for viewing!
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          html, sass, js, jQuery, backbone.js, underscore.js
+          <b>SPA:</b> html, sass, js, jQuery, backbone.js, underscore.js
         </p>
       </aside>
       <aside>
@@ -542,7 +552,7 @@ And thanks for viewing!
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          asynchronous, java, google adwords API, Android Studio
+          <b>ANDROID APP:</b> asynchronous, java, google adwords API, Android Studio
         </p>
       </aside>
       <aside>
@@ -554,7 +564,7 @@ And thanks for viewing!
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          my snippet library
+          <b>CODE:</b> my snippet library
         </p>
       </aside>
       <aside>
@@ -566,7 +576,7 @@ And thanks for viewing!
           <img src="assets/img/logo-github.png" alt="github logo">
         </a>
         <p>
-          angularJS example hosted on heroku, learning angular 2
+          <b>TUTORIAL:</b> angularJS example hosted on heroku, <i>learning <b>angular2</b></i>
         </p>
       </aside>
     </div>
@@ -578,14 +588,14 @@ And thanks for viewing!
       <div>
         <ul>
           <li>HTML5</li>
-          <li>CSS3 - {LESS} - SASS - Bootstrap</li>
-          <li>javascript - jQuery - jQuery-ui - AngularJS | JSON</li>
+          <li>CSS3 | {LESS} | SASS | Bootstrap</li>
+          <li>javascript | jQuery | jQuery-ui | Backbone.js | Angular2 | JSON</li>
           <li>Python</li>
-          <li>Android - XML - Java</li>
-          <li>Ruby | Ruby on Rails</li>
-          <li>Drupal - MySQL - PHP</li>
-          <li>Web APIs - AJAX</li>
-          <li>VB.NET</li>
+          <li>Android | XML | Java</li>
+          <li>Ruby | Ruby on Rails | ERB</li>
+          <li>Drupal | MySQL | PHP | Kirby (a file-based CMS)</li>
+          <li>AJAX | RESTful APIs (AWS Lambda, Wufoo, Google Maps / Books / Adword)</li>
+          <li>C# | VB.NET</li>
           <li>Oracle's SQL</li>
         </ul>
         <a href="https://github.com/markedwardnewman" target="_blank">
@@ -596,13 +606,10 @@ And thanks for viewing!
       <div>
         <ul>
           <li>Adobe's Creative Cloud</li>
-          <li>Android Studio</li>
-          <li>Cloud 9</li>
-          <li>GitHub</li>
-          <li>npm&nbsp;-&nbsp;Grunt (watch, autoprefixer, uncss, minify, etc.)</li>
-          <li>Notepad++ | Sublime</li>
-          <li>Visual Studio</li>
-          <li>VMware&nbsp;-&nbsp;VirtualBox</li>
+          <li>SVN | Bitbucket | GitHub</li>
+          <li>npm | gulp / grunt (watch, postcss, autoprefix, CSS3, etc.)</li>
+          <li>Android Studio | Visual Studio  | Eclipse | Cloud9 | Notepad++ | Sublime</li>
+          <li>VMware | VirtualBox</li>
         </ul>
         <a href="https://github.com/markedwardnewman" target="_blank">
           <img src="assets/img/logo-github.svg" alt="github logo">
@@ -611,14 +618,9 @@ And thanks for viewing!
       <h3>&nbsp;<span>Development Environments</span></h3>
       <div>
         <ul>
-          <li>Android</li>
-          <li>Apache</li>
-          <li>OS X</li>
-          <li>UNIX&nbsp;-&nbsp;Linux</li>
-          <li>Windows&nbsp;-&nbsp;IIS</li>
-          <li>Amazon Web Services (AWS)</li>
-          <li>Heroku</li>
-          <li>Red Hat's OpenShift</li>
+          <li>UNIX | Linux | Windows | OS X | Android</li>
+          <li>Amazon Web Services (AWS) | Heroku | Red Hat's OpenShift</li>
+          <li>WAMP/LAMP | MEAN | node.js</li>
         </ul>
         <a href="https://github.com/markedwardnewman" target="_blank">
           <img src="assets/img/logo-github.svg" alt="github logo">
@@ -637,11 +639,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var sliders = document.getElementsByTagName("aside");
     var accordion = document.querySelectorAll("#about h3, #skills h3");
     window.addEventListener("scroll", slide(sliders));
+	
+    //Accordion
     (function() {
         for (var i = 0; i < accordion.length; i++) {
             accordion[i].addEventListener("click", toggleAccordion);
         }
     })();
+	
+    //Google Analytics
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+	
+    ga('create', 'UA-49117203-1', 'auto');
+    ga('send', 'pageview');
 });
 
 function slide(el) {
@@ -655,8 +675,7 @@ function slide(el) {
 function isVisible(el) {
     var rect = el.getBoundingClientRect();
     var html = document.documentElement;
-    return (rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || html.clientHeight) &&
-        rect.right <= (window.innerWidth || html.clientWidth));
+    return (rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || html.clientHeight) && rect.right <= (window.innerWidth || html.clientWidth));
 }
 
 function toggleAccordion() {
@@ -664,10 +683,8 @@ function toggleAccordion() {
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
-        panel.style.color = 'red';
     } else {
         panel.style.maxHeight = (panel.scrollHeight - 3) + 'px';
-        //panel.style.color = 'red';
     }
 }
 </script>
