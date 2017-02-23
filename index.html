@@ -3,10 +3,6 @@
 <head>
   <title>Mark Newman's Portfolio</title>
   <meta charset="utf-8">
-  
-  
-  
-  
   <!-- Hi!
   A spat of framework fatigue coupled with a challenge to myself inspired this particular version of my portfolio.  Behold!...
 
@@ -14,7 +10,7 @@
     + It's completely responsive without the use of media-queries
     + It's completely cross-browser compatible and platform independent
     + Only vanilla javascript is used
-    + No CSS class names are used- styling declarations are limited to element selectors and pseudo-selectors.  The three IDs are for anchor linking.
+    + No CSS class names are used- styling declarations are limited to element selectors and pseudo-selectors.  The three IDs are for anchor linking.**
     + It makes a darn good DOM outline.  Check out the link found under the "Front End Web Development" tab to see it in action!
     
     The git icons link to the respective project's source code.  If the link doesn't do anything it means public access has yet to be authorized.  Also, we code manglers need a day off every now and then, so I opted for readability over minification.  Please enjoy and thanks for viewing!
@@ -25,14 +21,42 @@
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="author" content="Mark Newman">
   <meta name="description" content="Mark Newman's Portfolio - Front End Web Developer - Austin.Texas | My meta-skills, Github source code, and recent projects">
   <meta name="keywords" content="front-end, frontend, web developer, html, css, javascript, jQuery, responsive, mobile-first">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="OYDloiCAqWDdnETp3nJUcvr6fTsJHSbKTwCG6xVWZzg">
+  <!-- <meta name="google-site-verification" content="OYDloiCAqWDdnETp3nJUcvr6fTsJHSbKTwCG6xVWZzg"> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700%7CRoboto+Slab:700" type="text/css">
-  <!-- <link rel="stylesheet" href="assets/css/main.css" type="text/css"> -->
   <link rel="author" href="humans.txt" type="text/css">
   <link rel="icon" href="apple-touch-icon.png" type="image/apple-touch-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -280,7 +304,7 @@
     section:nth-child(3) div {
       overflow: hidden; }
 
-    div aside.slide-in {
+    div aside.figure {
       -webkit-transition: 0.8s cubic-bezier(0.38, -0.55, 0.27, 1.25);
       transition: 0.8s cubic-bezier(0.38, -0.55, 0.27, 1.25);
       -webkit-transform: translateX(0);
@@ -667,7 +691,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 function slide(el) {
     for (var i = 0; i < el.length; i++) {
         if (isVisible(el[i]) == false) {
-            el[i].classList.toggle("slide-in");
+            el[i].classList.toggle("figure");
         }
     }
 }
