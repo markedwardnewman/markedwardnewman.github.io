@@ -1,5 +1,4 @@
 //Gruntfile.js for markedwardnewman.com
-
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
@@ -17,7 +16,7 @@ module.exports = function(grunt) {
     concat: {
       css: {
         //Concatenate all of the files in the cssResources configuration property
-        src: [ 'src/assets/css/vendor/jquery-ui/jquery-ui.css','src/assets/css/main.css' ],
+        src: [ 'src/assets/css/main.css' ],
         dest: 'assets/css/bundled.css',
         options: {
           separator: '\n\n\n\n\n\n\n\n\n\n/*concatenated from new sourcefile. see Grunfile.js*/\n'
@@ -25,10 +24,7 @@ module.exports = function(grunt) {
       },
 
       js: {
-        src: ['src/assets/js/vendor/jquery/jquery.js',
-              'src/assets/js/vendor/jquery-ui/jquery-ui.js',
-              'src/assets/js/vendor/parallax/parallax.js',
-              'src/assets/js/src.main.js'],
+        src: [ 'src/assets/js/src.main.js' ],
         dest: 'src/assets/js/bundled.js',
         options: {
           separator: '\n\n\n\n\n\n\n\n\n\n/*concatenated from new sourcefile. see Grunfile.js*/\n'
@@ -36,12 +32,10 @@ module.exports = function(grunt) {
       }
     },
 
-
     //CSS: A generalized task with specialized components
     postcss: {
       options: {
-        processors: [
-        
+        processors: [      
           //Standardizes the order of css rules
           require('postcss-sorting'),
           
@@ -60,7 +54,6 @@ module.exports = function(grunt) {
       }
     },
 
-
     //JS: mangles, minifies, and concatenates all js files into one file
     uglify: {
       options: {
@@ -71,36 +64,11 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          //dest file:
-          'assets/js/bundled.js':
-
-          //src files:
-          [  'src/assets/js/vendor/jquery/jquery.js',
-             'src/assets/js/vendor/jquery-ui/jquery-ui.js',
-             'src/assets/js/vendor/parallax/parallax.js',
-             'src/assets/js/src.main.js']
+          //dest                  src files
+          'assets/js/bundled.js': [ 'src/assets/js/src.main.js' ]
         }
       }
     },
-
-    
-    //HTML: Reports w3c validation errors
-    validation: { 
-      options: {
-          reset: grunt.option('reset') || true,
-          reportpath: 'log/html-w3c-error-log/validation-report.json',
-          path: 'log/html-w3c-error-log/validation-status.json',
-          stoponerror: false,
-          generateReport: true,
-          //errorHTMLRootDir: 'dist/html-w3c-error-log',
-          errorHTMLRootDir: 'log/html-w3c-error-log',
-          useTimeStamp: true
-      },
-      files: {
-          src: 'index.html'
-      }
-    },
-
 
     //WATCH: Performs specified tasks based upon file changes
 		watch: {
@@ -108,11 +76,7 @@ module.exports = function(grunt) {
         files: 'src/assets/css/main.scss',
         tasks: ['sass']
         //tasks: ['sass','postcss']
-      }/* ,
-      html: {
-        files: 'index.html',
-        tasks: ['validation']
-      } */
+      }
 		}
 	});
   
@@ -121,9 +85,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-w3c-html-validation');
-
 	grunt.registerTask('default',['watch']);
-  //grunt.registerTask('all',['sass','postcss','validation']);
   grunt.registerTask('test1',['sass','concat','postcss','uglify']);
 }

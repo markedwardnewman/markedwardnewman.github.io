@@ -3,7 +3,7 @@
 
 **Portfolio:** **[markedwardnewman.com](http://markedwardnewman.com)**<br>
 **Location:** Austin, TX, United States<br>
-**Email:** markedwardnewman@gmail.com<br>
+**Email:** **markedwardnewman@gmail.com**<br>
 **Download:** **[résumé](http://www.markedwardnewman.com/assets/misc/MarkNewmanResume.docx)**
 
 Platform-independent, **responsive**, **easily-modified**, fully functional **sites** and **single-page applications** delivered to virtual front doors across the globe daily. Would-be ribbon winning advocate for **[W3C's semantic markup standards](https://validator.w3.org/nu/?doc=http%3A%2F%2Fmarkedwardnewman.com%2F&showoutline=yes)**, **Google’s Material Design guidelines**, and *using only those frameworks that are suitable for the task at hand*. Professional contact with **backbone.js**, tinkering affairs with AngularJS and React, engaged to **Angular2**. **HTML5**, **CSS3** and **JavaScript** are hand-coded when practical and scaffolded when not. Avoids the chaos by playing with **Npm task-runners** and **build tools** while on break.
