@@ -2,10 +2,10 @@
   Site: markedwardnewman.com
   Author: Mark Newman
   ========================================= */
-/* maroon https://www.youtube.com/watch?v=zXTpASSd9xE 
+/* maroon https://www.youtube.com/watch?v=zXTpASSd9xE
 mandelbulb 3d fractal hd*/
 /* sand 215, 206, 204 */
-/* olive  181, 150, 124 */
+/* olive  99,145,99 */
 /* black, white, and grays */
 html {
   margin: 0;
@@ -15,6 +15,10 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit; }
+
+::selection {
+  background-color: rgba(99, 145, 99, 0.3);
+  color: rgba(205, 223, 207, 1); }
 
 body {
   margin: 0;
@@ -59,16 +63,29 @@ h3 {
   position: relative;
   margin: 0;
   padding: 1rem;
-  border-top: 1px solid rgba(205, 223, 207, .37);
-  border-right: 0;
-  border-bottom: 0;
-  border-left: 1px solid rgba(205, 223, 207, .25);
-  border-radius: 2rem;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   line-height: 1;
-  background-color: rgba(100, 50, 50, .95); }
+  border-top: 1px solid rgba(205, 223, 207, .37);
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid rgba(205, 223, 207, .25);
+  border-radius: 2rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
+  background-color: rgba(100, 50, 50, 1); }
+
+h3:hover, h3:focus {
+  outline-width: 0;
+  background-color: rgba(100, 50, 50, .75);
+  cursor: pointer;
+  transition: background-color .15s; }
+
+h3.active {
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.95);
+  border: 1px solid #492424;
+  background-color: rgba(100, 50, 50, .67);
+  cursor: pointer;
+  transition: background-color .15s; }
 
 h3:first-of-type {
   margin-top: 0; }
@@ -77,7 +94,7 @@ h3:before {
   content: '\25B6';
   float: left;
   margin-right: 5px;
-  transition: transform 0.25s; }
+  transition: 0.25s; }
 
 h3.active:before {
   transform: rotate(90deg); }
@@ -85,17 +102,11 @@ h3.active:before {
 h3 span {
   position: absolute;
   left: 3rem;
-  transition: .5s ease-in-out; }
+  transition: .5s; }
 
 h3.active span {
   left: 50%;
   transform: translateX(-50%); }
-
-h3.active,
-h3:hover {
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.95);
-  background-color: rgba(100, 50, 50, 1);
-  cursor: pointer; }
 
 h3 + div {
   max-height: 0;
@@ -118,7 +129,6 @@ h3.active:last-of-type + div {
 a {
   color: rgba(205, 223, 207, .67); }
 
-a:focus,
 a:hover,
 a:visited {
   color: rgba(205, 223, 207, .95); }
@@ -126,11 +136,16 @@ a:visited {
 a:active {
   color: rgba(205, 223, 207, 1); }
 
+a:focus {
+  outline-style: dotted;
+  outline-color: rgba(205, 223, 207, .75);
+  outline-width: 1px; }
+
 p {
   margin: 0;
   padding: 1rem 0 1rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: rgba(205, 223, 207, .67); }
 
 img {
@@ -138,7 +153,7 @@ img {
   vertical-align: middle; }
 
 header {
-  margin: 0 13.5%;
+  margin: 1rem 13.5% 0 13.5%;
   display: flex;
   flex-flow: row wrap-reverse; }
 
@@ -209,14 +224,15 @@ aside {
   border-radius: 2rem;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
   text-align: center;
-  background-color: rgba(100, 50, 50, .95);
-  transition: 0.2s;
+  background-color: rgba(100, 50, 50, 1);
+  transition: 0.15s;
   display: flex;
   flex-flow: column wrap; }
 
 aside:hover {
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.95);
-  background-color: rgba(100, 50, 50, 1); }
+  background-color: rgba(100, 50, 50, .75);
+  transition: background-color .15s; }
 
 aside h3 {
   display: none; }

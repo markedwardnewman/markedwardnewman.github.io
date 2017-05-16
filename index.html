@@ -4,36 +4,28 @@
   <title>Mark Newman’s Portfolio</title>
   <meta charset="utf-8">
   
-  <!-- Hi!
-  A spat of framework fatigue coupled with a challenge to myself inspired this particular version of my portfolio.  Behold!...
+  <!--
+  Hello! A spat of framework fatigue coupled with a challenge to myself inspired this particular version of my portfolio to...
 
-    + No frameworks are used– all code used to render this page is on this page* (see Recent Projects for examples that do use frameworks)
-    + It’s completely responsive without the use of media-queries
-    + It’s completely cross-browser compatible and platform independent
-    + Only vanilla javascript is used
-    + No CSS class names are used– styling declarations are limited to element selectors and pseudo-selectors.  The three IDs are for anchor linking.**
-    + It makes a darn good DOM outline.  Check out the link found under the "Front End Web Development" tab to see it in action!
+    + maintain responsiveness across browsers and platforms without frameworks or media queries
+    + use ES5 "vanilla" javascript only
+    + limit CCS styling declarations to element selectors and pseudo-selectors only
+    + maintain accessibility using semantically correct HTML without needing WAI-ARIA attribute enhancements
     
-    The git icons link to the respective project’s source code.  If the link doesn’t do anything it means public access has yet to be authorized.  Also, we code manglers need a day off every now and then, so I opted for readability over minification.  Please enjoy and thanks for viewing!
-
-  *Aside from the font link and Google Analytics hook
-  Bye! -->
+  Thanks and please enjoy!
+  -->
   
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="author" content="Mark Newman">
   <meta name="description" content="Mark Newman’s Portfolio – Front End Web Developer – Austin.Texas | My meta-skills, Github source code, and recent projects">
   <meta name="keywords" content="front-end, frontend, web developer, html, css, javascript, jQuery, responsive, mobile-first">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700%7CRoboto+Slab:700" type="text/css">
   <link rel="author" href="humans.txt" type="text/css">
   <link rel="icon" href="apple-touch-icon.png" type="image/apple-touch-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700%7CRoboto+Slab:700" type="text/css">
   <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-  <style type="text/css">
-
-  </style>
   <script>
-    //Google Analytics
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function() {
@@ -62,21 +54,22 @@
   <section id="about">
     <h2>About</h2>
     <div>
-      <h3>&nbsp;<span>Front End</span></h3>
+      <h3 tabindex="0">&nbsp;<span>Front End</span></h3>
       <div>
         <p>
           Would-be ribbon winning advocate for <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fmarkedwardnewman.com%2F&showoutline=yes" target="_blank"><b>W3C’s semantic markup</b></a> standards, <b>Google’s Material Design</b> guidelines, and <em>using only those frameworks that are suitable for the task at hand</em>.
         </p>
-        <p>Professional contact with <b>backbone.js</b>, tinkering affairs with AngularJS and React, engaged to <b>Angular2</b>. <b>HTML5</b>, <b>CSS3</b> and <b>JavaScript</b> are hand-coded when practical and scaffolded when not. Avoids the chaos by playing with <b>Npm task-runners and build tools</b> while on break.
+        <p>
+          Professional contact with <b>backbone.js</b>, tinkering affairs with AngularJS and React, engaged to <b>Angular2</b>. <b>HTML5</b>, <b>CSS3</b> and <b>JavaScript</b> are hand-coded when practical and scaffolded when not. Avoids the chaos by playing with <b>Npm task-runners and build tools</b> while on break.
         </p>
       </div>
-      <h3>&nbsp;<span>Back End</span></h3>
+      <h3 tabindex="0">&nbsp;<span>Back End</span></h3>
       <div>
         <p>
           <b>Apple, Inc.</b> is still using a monitoring program I wrote that has a hand in manufacturing the Mac Pro (it’s a vase!). I have a published <a href="https://play.google.com/store/apps/details?id=com.thelazyboyfriend.app" target="_blank">Android app on Google Play</a>; have developed a from-the-ground-up <a href="https://github.com/markedwardnewman/sample_app" target="_blank">Ruby on Rails</a> site where members can “tweet” and follow other members’ “tweets”. Features include <b>SSL encryption</b>, email-based <b>account activation</b> and password reset, secure <b>password encryption</b> using bcrypt, session-based cookies, <b>form validation</b> using regex constraints, and built-in <b>test-driven development</b>. Ruby on Rails’ structured scaffolding is fantastic.
         </p>
       </div>
-      <h3>&nbsp;<span>Business Analysis</span></h3>
+      <h3 tabindex="0">&nbsp;<span>Business Analysis</span></h3>
       <div>
         <p>
           Planning, deploying, and delivering enterprise-wide technological solutions is a meta-skill that I keep in my back pocket. Sucessfully tuning <b>short-term business objectives</b> to <b>long-term strategic goals</b> requires sincere effort, genuine leadership, vast knowledge, and considerable resources. And that’s not an easy thing to put together.  Synergizing those elements into a productive whole is the focus of my <b>project management</b> philosophy.
@@ -90,7 +83,7 @@
       <aside>
         <h3>Full Site – ItalianWay</h3>
         <a href="https://en.italianway.house/" target="_blank">
-          <img src="assets/img/logo-italianway.png" alt="logo">
+          <img src="assets/img/logo-italianway.png" alt="italianway logo">
         </a>
         <a>
           <img src="assets/img/logo-github.png" alt="github logo">
@@ -102,7 +95,7 @@
       <aside>
         <h3>Full Site – e-MDs</h3>
         <a href="http://e-mds.com/" target="_blank">
-          <img src="assets/img/logo-emds.png" alt="logo">
+          <img src="assets/img/logo-emds.png" alt="emds logo">
         </a>
         <a href="https://github.com/markedwardnewman/e-mds.com" target="_blank">
           <img src="assets/img/logo-github.png" alt="github logo">
@@ -114,7 +107,7 @@
       <aside>
         <h3>Single Page App – Cisco</h3>
         <a href="https://community.spiceworks.com/partners/cisco/spark-quiz" target="_blank">
-          <img src="assets/img/logo-cisco.png" alt="logo">
+          <img src="assets/img/logo-cisco.png" alt="cisco logo">
         </a>
         <a>
           <img src="assets/img/logo-github.png" alt="github logo">
@@ -126,7 +119,7 @@
       <aside>
         <h3>Single Page App – Lenovo</h3>
         <a href="https://community.spiceworks.com/partners/lenovo/mobilityquiz/mobilityquiz-en" target="_blank">
-          <img src="assets/img/logo-lenovo.png" alt="logo">
+          <img src="assets/img/logo-lenovo.png" alt="lenovo logo">
         </a>
         <a>
           <img src="assets/img/logo-github.png" alt="github logo">
@@ -138,7 +131,7 @@
       <aside>
         <h3>Android App – The Lazy Boyfriend</h3>
         <a href="https://play.google.com/store/apps/details?id=com.thelazyboyfriend.app&hl=en" target="_blank">
-          <img src="assets/img/logo-lazyboyfriend.png" alt="logo">
+          <img src="assets/img/logo-lazyboyfriend.png" alt="lazy boyfriend logo">
         </a>
         <a href="https://github.com/markedwardnewman/the-lazy-boyfriend" target="_blank">
           <img src="assets/img/logo-github.png" alt="github logo">
@@ -150,7 +143,7 @@
       <aside>
         <h3>Code Snippets – Javascript</h3>
         <a href="http://markedwardnewman.com/javascript-snippet-library/javascript-snippets.html" target="_blank">
-          <img src="assets/img/logo-js.png" alt="logo">
+          <img src="assets/img/logo-js.png" alt="javascript logo">
         </a>
         <a href="https://github.com/markedwardnewman/javascript-snippet-library" target="_blank">
           <img src="assets/img/logo-github.png" alt="github logo">
@@ -162,7 +155,7 @@
       <aside>
         <h3>Testing – Angular2 Playground</h3>
         <a href="https://angular2-playground1.herokuapp.com/" target="_blank">
-          <img src="assets/img/logo-angular2.png" alt="logo">
+          <img src="assets/img/logo-angular2.png" alt="angular2 logo">
         </a>
         <a href="https://github.com/markedwardnewman/angular2-playground1" target="_blank">
           <img src="assets/img/logo-github.png" alt="github logo">
@@ -174,7 +167,7 @@
       <aside>
         <h3>My Portfolio's code</h3>
         <a href="https://github.com/markedwardnewman/markedwardnewman.github.io" target="_blank">
-          <img src="assets/img/logo-portfolio.png" alt="logo">
+          <img src="assets/img/logo-portfolio.png" alt="portfolio logo">
         </a>
         <a>
           <img src="assets/img/logo-github.png" alt="github logo">
@@ -188,7 +181,7 @@
   <section id="skills">
     <h2>Skills</h2>
     <div>
-      <h3>&nbsp;<span>Scripting</span></h3>
+      <h3 tabindex="0">&nbsp;<span>Scripting</span></h3>
       <div>
         <ul>
           <li>HTML5</li>
@@ -206,7 +199,7 @@
           <img src="assets/img/logo-github.svg" alt="github logo">
         </a>
       </div>
-      <h3>&nbsp;<span>Tools</span></h3>
+      <h3 tabindex="0">&nbsp;<span>Tools</span></h3>
       <div>
         <ul>
           <li>Adobe’s Creative Cloud</li>
@@ -219,7 +212,7 @@
           <img src="assets/img/logo-github.svg" alt="github logo">
         </a>
       </div>
-      <h3>&nbsp;<span>Environments</span></h3>
+      <h3 tabindex="0">&nbsp;<span>Environments</span></h3>
       <div>
         <ul>
           <li>UNIX | Linux | Windows | OS X | Android</li>
@@ -235,46 +228,9 @@
   <footer>
     <h2>Contact</h2>
     <a href="assets/misc/MarkNewmanResume.docx">resume</a>
-    <a href="https://www.linkedin.com/in/markedwardnewman" title="linkedIn" target="_blank"><img src="assets/img/logo-linkedin.png" alt="logo"></a>
+    <a href="https://www.linkedin.com/in/markedwardnewman" title="linkedIn" target="_blank"><img src="assets/img/logo-linkedin.png" alt="linkedin logo"></a>
     <a href="mailto:markedwardnewman@gmail.com" title="markedwardnewman@gmail.com">markedwardnewman@gmail.com</a>
   </footer>
-<script>
-document.addEventListener("DOMContentLoaded", function(event) {
-    var sliders = document.getElementsByTagName("aside");
-    var accordion = document.querySelectorAll("#about h3, #skills h3");
-    window.addEventListener("scroll", slide(sliders));
-	
-    //Accordion
-    (function() {
-        for (var i = 0; i < accordion.length; i++) {
-            accordion[i].addEventListener("click", toggleAccordion);
-        }
-    })();
-});
-
-function slide(el) {
-    for (var i = 0; i < el.length; i++) {
-        if (isVisible(el[i]) == false) {
-            el[i].classList.toggle("figure");
-        }
-    }
-}
-
-function isVisible(el) {
-    var rect = el.getBoundingClientRect();
-    var html = document.documentElement;
-    return (rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || html.clientHeight) && rect.right <= (window.innerWidth || html.clientWidth));
-}
-
-function toggleAccordion() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-    } else {
-        panel.style.maxHeight = (panel.scrollHeight - 3) + 'px';
-    }
-}
-</script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
