@@ -279,17 +279,18 @@ section:last-of-type a {
   width: 25%;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-38.5%, -50%);
   text-decoration: none; }
 
 section:last-of-type a img {
+  margin: 400px 0;
   width: 80%;
   height: 80%;
   opacity: .33;
   transition: 0.4s cubic-bezier(0.38, -0.55, 0.27, 1.25); }
 
 section:last-of-type a:hover img {
-  transform: translate(-10%, 0);
+  transform: translate(-10.5%, 0);
   width: 100%;
   height: 100%;
   opacity: .66; }
