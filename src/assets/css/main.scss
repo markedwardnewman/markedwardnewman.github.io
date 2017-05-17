@@ -143,6 +143,10 @@ h3:hover,h3:focus {
   transition: background-color .15s;
 }
 
+h3:focus {
+  border-style: dotted;
+}
+
 h3.active {
   box-shadow: 3px 3px 2px $color-dark;
   border: 1px solid $color-primary-hex-darker;
