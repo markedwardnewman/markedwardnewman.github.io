@@ -77,17 +77,20 @@ h3:hover, h3:focus {
   outline-width: 0;
   background-color: rgba(100, 50, 50, .75);
   cursor: pointer;
-  transition: background-color .15s; }
+  transition: 0.15s; }
 
 h3:focus {
-  border-style: dotted; }
+  border-top: 1px dashed rgba(205, 223, 207, .37);
+  border-right: 1px dashed rgba(100, 50, 50, 1);
+  border-bottom: 1px dashed rgba(100, 50, 50, 1);
+  border-left: 1px dashed rgba(205, 223, 207, .25); }
 
 h3.active {
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.95);
   border: 1px solid #492424;
   background-color: rgba(100, 50, 50, .67);
   cursor: pointer;
-  transition: background-color .15s; }
+  transition: 0.25s; }
 
 h3:first-of-type {
   margin-top: 0; }
@@ -96,7 +99,7 @@ h3:before {
   content: '\25B6';
   float: left;
   margin-right: 5px;
-  transition: 0.25s; }
+  transition: transform 0.15s; }
 
 h3.active:before {
   transform: rotate(90deg); }
@@ -104,7 +107,9 @@ h3.active:before {
 h3 span {
   position: absolute;
   left: 3rem;
-  transition: .5s; }
+  transform: translateX(0);
+  transition: 0.5s;
+  will-change: transform; }
 
 h3.active span {
   left: 50%;
@@ -119,7 +124,8 @@ h3 + div {
   border-bottom: thin solid transparent;
   background-color: rgba(0, 0, 0, 0.95);
   overflow: hidden;
-  transition: 1s; }
+  transition: 1s;
+  will-change: max-height; }
 
 h3 + div:last-of-type {
   border-bottom: thin solid rgba(205, 223, 207, .37);
@@ -225,16 +231,18 @@ aside {
   border-bottom: 0;
   border-radius: 2rem;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
+  transform: translateX(0);
   text-align: center;
   background-color: rgba(100, 50, 50, 1);
-  transition: 0.15s;
+  transition: 0.75s;
+  will-change: transform;
   display: flex;
   flex-flow: column wrap; }
 
 aside:hover {
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.95);
   background-color: rgba(100, 50, 50, .75);
-  transition: background-color .15s; }
+  transition: 0.25s; }
 
 aside h3 {
   display: none; }
@@ -283,11 +291,10 @@ section:last-of-type a {
   text-decoration: none; }
 
 section:last-of-type a img {
-  margin: 400px 0;
   width: 80%;
   height: 80%;
   opacity: .33;
-  transition: 0.4s cubic-bezier(0.38, -0.55, 0.27, 1.25); }
+  transition: 0.25s; }
 
 section:last-of-type a:hover img {
   transform: translate(-10.5%, 0);
@@ -305,7 +312,7 @@ li {
   padding: 0;
   line-height: 1.5;
   font-size: 1rem;
-  color: rgba(205, 223, 207, .95); }
+  color: rgba(205, 223, 207, .67); }
 
 li:last-child {
   padding-bottom: 0; }

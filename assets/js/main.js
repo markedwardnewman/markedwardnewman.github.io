@@ -11,13 +11,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
             accordion[i].addEventListener('keyup', enterAccordion);
         }
     })();
-    
-/*     (function() {
-        for (var i = 0; i < hidden_anchors.length; i++) {
-            console.log(hidden_anchors[i]);
-            hidden_anchors[i].addEventListener('focus', enterAccordion);
-        }
-    })(); */
 });
 
 function slide(el) {
@@ -45,15 +38,14 @@ function clickAccordion() {
 }
 
 function enterAccordion(event) {
-      //var keyaa = event.which || event.keyCode || 0;
-      
-      if (event.which === 13) {
-          this.classList.toggle('active');
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-          } else {
-              panel.style.maxHeight = (panel.scrollHeight - 3) + 'px';
-          }
-      }
+    //var keyaa = event.which || event.keyCode || 0;
+    if (event.which === 13) {
+        this.classList.toggle('active');
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = (panel.scrollHeight - 3) + 'px';
+        }
+    }
 }

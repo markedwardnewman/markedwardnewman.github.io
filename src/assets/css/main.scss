@@ -140,11 +140,14 @@ h3:hover,h3:focus {
   outline-width: 0;
   background-color: $color-primary-dark;
   cursor: pointer;
-  transition: background-color .15s;
+  transition: 0.15s;
 }
 
 h3:focus {
-  border-style: dotted;
+  border-top: 1px dashed $color-secondary-lighter;
+  border-right: 1px dashed $color-primary-darkest;
+  border-bottom: 1px dashed $color-primary-darkest;
+  border-left: 1px dashed $color-secondary-lightest;
 }
 
 h3.active {
@@ -152,7 +155,7 @@ h3.active {
   border: 1px solid $color-primary-hex-darker;
   background-color: $color-primary;
   cursor: pointer;
-  transition: background-color .15s;
+  transition: 0.25s;
 }
 
 h3:first-of-type {
@@ -163,7 +166,7 @@ h3:before {
   content: '\25B6';
   float: left;
   margin-right: 5px;
-  transition: 0.25s;
+  transition: transform 0.15s;
 }
 
 h3.active:before {
@@ -174,7 +177,9 @@ h3.active:before {
 h3 span {
   position: absolute;
   left: $size-xl;
-  transition: .5s;
+  transform: translateX(0);
+  transition: 0.5s;
+  will-change: transform;
 }
 
 h3.active span {
@@ -193,7 +198,7 @@ h3 + div {
   background-color: $color-dark;
   overflow: hidden;
   transition: 1s;
-  //will-change: max-height;
+  will-change: max-height;
 }
 
 h3 + div:last-of-type {
@@ -319,11 +324,12 @@ aside {
   border-bottom: 0;
   border-radius: $size-lg;
   box-shadow: 1px 1px 2px $color-dark;
-
+  transform: translateX(0);
   text-align: center;
 
   background-color: $color-primary-darkest;
-  transition: 0.15s;
+  transition: 0.75s;
+  will-change: transform;
 
   display: flex;
   flex-flow: column wrap;
@@ -332,7 +338,7 @@ aside {
 aside:hover {
   box-shadow: 3px 3px 2px $color-dark;
   background-color: $color-primary-dark;
-  transition: background-color .15s;
+  transition: 0.25s;
 }
 
 aside h3 {
@@ -394,11 +400,10 @@ section:last-of-type a {
 }
 
 section:last-of-type a img {
-  margin: 400px 0;
   width: 80%;
   height: 80%;
   opacity: .33;
-  transition: 0.4s cubic-bezier(.38, -0.55, 0.27, 1.25);
+  transition: 0.25s;
 }
 
 section:last-of-type a:hover img {
@@ -419,7 +424,7 @@ li {
   padding: 0;
   line-height: $line-height * 1.5;
   font-size: $size;
-  color: $color-secondary-darker;
+  color: $color-secondary;
 }
 
 li:last-child {
@@ -435,7 +440,6 @@ footer {
   background-color: $color-dark;
   color: $color-secondary-darker;
   text-align: center;
-
 }
 
 footer h2 {
@@ -455,4 +459,3 @@ footer img {
   top: $size;
   right: $size;
 }
-
