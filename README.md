@@ -1,7 +1,7 @@
 ## Mark Newman
 ### Front End Web Developer
 
-**Portfolio:** **[markedwardnewman.com](http://markedwardnewman.com)**<br>
+**Portfolio:** **[markedwardnewman.github.io](https://markedwardnewman.github.io)**<br>
 **Location:** Austin, TX, United States<br>
 **Email:** **markedwardnewman@gmail.com**<br>
 **Download:** **[résumé](http://www.markedwardnewman.com/assets/misc/MarkNewmanResume.docx)**
