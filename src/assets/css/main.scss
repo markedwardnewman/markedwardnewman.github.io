@@ -85,7 +85,8 @@ body {
   font-weight: $font-weight-light;
   background-image: url("../img/6b.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  //background-size: cover;
+  background-size: 100% auto;
   background-position: center;
   background-attachment: fixed;
   background-color: #061403;

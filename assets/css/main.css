@@ -34,7 +34,7 @@ body {
   background-image: url("../img/6b.jpg");
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   color: #cddfcf;
   color: rgba(205, 223, 207, .95);
