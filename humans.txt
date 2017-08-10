@@ -21,12 +21,12 @@
     Optimization:
         Optimized for load speed
     SEO:
-        Semantic Coding as per https://www.google.com/webmasters/markup-helper/
+        Semantic Coding as per https://www.w3.org/standards/
     Fonts:
         Roboto          :300,700
         Roboto Slab     :700
     Code Libraries used:
-        null
+        none
     Local tools:
         Notepad++
         Chrome Developer tools
@@ -34,7 +34,6 @@
         First LESS, then SASS pre-processors
         Git Bash / npm / grunt
     Online tools:
-        https://validator.w3.org/, then grunt 
         Viewport Dimensions by www.cswapps.com
         Github
         
