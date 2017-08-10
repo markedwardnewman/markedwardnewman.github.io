@@ -26,7 +26,8 @@
         Roboto          :300,700
         Roboto Slab     :700
     Code Libraries used:
-        none
+        none for rendering the page itself
+        https://github.com/MohamedBassem/spam-referrals-blocker to block spammy referrals that normally get counted in Google Analytics
     Local tools:
         Notepad++
         Chrome Developer tools
