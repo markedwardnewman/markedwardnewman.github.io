@@ -2,7 +2,7 @@
 ### Front End Web Developer
 
 **Portfolio:** **[markedwardnewman.github.io](https://markedwardnewman.github.io)**<br>
-**Location:** Austin, TX, United States<br>
+**Location:** Austin, TX, United States | Remote<br>
 **Email:** **markedwardnewman@gmail.com**<br>
 **Download:** **[résumé](http://www.markedwardnewman.com/assets/misc/MarkNewmanResume.docx)**
 
@@ -12,7 +12,7 @@ Have a published **[Android app](https://play.google.com/store/apps/details?id=c
 
 Have developed a couple of from-the-ground-up **Ruby on Rails** sites with a back-end that shields against nefarious internet shenanigans. I **[tutored myself](https://github.com/markedwardnewman/sample_app)** on the first one by including **SSL encryption**, email-based **account activation** and password reset, secure **authorization encryption** (using bcrypt), session-based cookies, and regexually constrained **form validation**. Also prototyped a platform-based Ruby on Rails site that taps the shared economy for revenue generation (think Airbnb). This is **[Italianway](https://en.italianway.house/)** in action!
 
-Enough **Drupal** experience to be dangerous. I did the installation, set-up and deployment, user account administration, theme and template creation, server-side code integration, and all things front-end for **[eMDs](http://e-mds.com/)**. Recent proponent of Kirby, a file-based CMS.
+Enough **Drupal** experience to be dangerous. Set-up and deployment, user account administration, theme and template creation, server-side code integration, and all things front-end. Recent proponent of Kirby, a file-based CMS.
 
 ### Languages, Frameworks, and CMS
 
