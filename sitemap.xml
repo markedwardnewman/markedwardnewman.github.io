@@ -7,8 +7,13 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://markedwardnewman.com/</loc>
-  <lastmod>2017-01-05T14:46:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://marknewman.me/</loc>
+  <lastmod>2017-08-10T18:30:20+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://marknewman.me/assets/misc/MarkNewmanResume.docx</loc>
+  <lastmod>2017-08-10T18:30:20+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 </urlset>
