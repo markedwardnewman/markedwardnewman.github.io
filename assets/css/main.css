@@ -10,6 +10,12 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #061403;
+  background-image: url("../img/6b.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 2vh; }
 
 *, *:before, *:after {
@@ -30,12 +36,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #061403;
-  background-image: url("../img/6b.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   color: #cddfcf;
   color: rgba(205, 223, 207, .95);
   font-weight: 300;

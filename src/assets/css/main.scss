@@ -67,6 +67,12 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-size: $size-root;
+  background-color: #061403;
+  background-image: url("../img/6b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 *, *:before, *:after {
@@ -83,13 +89,6 @@ body {
   padding: 0;
   font-family: $font-family-primary;
   font-weight: $font-weight-light;
-  background-image: url("../img/6b.jpg");
-  background-repeat: no-repeat;
-  //background-size: cover;
-  background-size: 100% auto;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: #061403;
   color: $color-secondary-darker;
 }
 
