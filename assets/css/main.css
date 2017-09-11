@@ -298,28 +298,15 @@ aside {
   background-color: #643232;
   background-color: rgba(100, 50, 50, 1);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
-  text-align: center;
-  transition: 0.75s;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  will-change: transform; }
+  text-align: center; }
 
 aside:hover {
   background-color: #643232;
   background-color: rgba(100, 50, 50, .75);
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.95);
-  transition: 0.25s; }
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.95); }
 
 aside h3 {
   display: none; }
-
-aside:nth-child(odd) {
-  -webkit-transform: translateX(-110%);
-          transform: translateX(-110%); }
-
-aside:nth-child(even) {
-  -webkit-transform: translateX(110%);
-          transform: translateX(110%); }
 
 aside:nth-child(odd) a:first-of-type {
   -webkit-box-ordinal-group: 3;
@@ -350,7 +337,7 @@ aside:nth-child(even) a:last-of-type {
           order: 1; }
 
 aside a:first-of-type img {
-  width: auto;
+  max-width: auto;
   height: 60px; }
 
 aside p {
@@ -428,3 +415,9 @@ footer img {
   right: 1rem;
   width: 27px;
   height: 27px; }
+
+@media screen and (min-width: 1048px) {
+  header {
+    margin: 1rem 24.25% 0 24.25%; }
+  section, footer {
+    margin: 0 20%; } }

@@ -325,12 +325,12 @@ aside {
   border-bottom: 0;
   border-radius: $size-lg;
   box-shadow: 1px 1px 2px $color-dark;
-  transform: translateX(0);
+  //transform: translateX(0);
   text-align: center;
 
   background-color: $color-primary-darkest;
-  transition: 0.75s;
-  will-change: transform;
+  //transition: 0.75s;
+  //will-change: transform;
 
   display: flex;
   flex-flow: column wrap;
@@ -339,7 +339,7 @@ aside {
 aside:hover {
   box-shadow: 3px 3px 2px $color-dark;
   background-color: $color-primary-dark;
-  transition: 0.25s;
+  //transition: 0.25s;
 }
 
 aside h3 {
@@ -347,11 +347,11 @@ aside h3 {
 }
 
 aside:nth-child(odd) {
-  transform: translateX(-110%);
+  //transform: translateX(-110%);
 }
 
 aside:nth-child(even) {
-  transform: translateX(110%);
+  //transform: translateX(110%);
 }
 
 aside:nth-child(odd) a:first-of-type {
@@ -377,7 +377,7 @@ aside:nth-child(even) a:last-of-type {
 }
 
 aside a:first-of-type img {
-  width: auto;
+  max-width: auto;
   height: 60px;
 }
 
@@ -459,4 +459,13 @@ footer img {
   height: 27px;
   top: $size;
   right: $size;
+}
+
+@media screen and (min-width: 1048px) {
+  header {
+    margin: 1rem 24.25% 0 24.25%;
+  }
+  section, footer {
+    margin: 0 20%;
+  }
 }
