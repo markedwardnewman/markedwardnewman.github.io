@@ -3,5 +3,5 @@ log/
 node_modules/
 src/assets/images/source/
 cmd
-*.ini
+desktop.ini
 *.lnk

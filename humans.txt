@@ -9,7 +9,7 @@
 
 # TECHNOLOGY COLOPHON
     Year created:
-        Late 2013
+        2013
     Modified:
         Plenty
     Language:
