@@ -1,0 +1,43 @@
+{
+  "name": "marknewman.me",
+  "version": "3.0.0",
+  "description": "My portfolio",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start notepad++ \"index.html\" && start notepad++ \"src/assets/css/main.scss\" && grunt start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markedwardnewman/markedwardnewman.github.io.git"
+  },
+  "keywords": [
+    "front-end",
+    "frontend",
+    "web",
+    "developer",
+    "html",
+    "css",
+    "javascript",
+    "angular",
+    "responsive",
+    "remote",
+    "Austin",
+    "Texas"
+  ],
+  "author": "Mark Newman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markedwardnewman/markedwardnewman.github.io/issues"
+  },
+  "homepage": "https://github.com/markedwardnewman/markedwardnewman.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.9.0",
+    "postcss-sorting": "^3.0.2"
+  }
+}
