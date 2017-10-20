@@ -15,7 +15,7 @@
     Language:
         English
     Doctype:
-        W3C Valid HTML5
+        utf-8 | W3C Valid HTML5
     Compatibility:
         All major browsers within the past 4 years / Mobile-first / Responsive
     Optimization:
