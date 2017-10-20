@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    //font-size: 2vh; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #061403;
+    color: #cddfcf;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+
+
+
+.grid-container-menu {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+	background-color: grey;
+	text-align: center;
+}
+
+.grid-container-menu h1 {
+	grid-column: 4 / span 2;
+    grid-row: 1 / span 2;
+
+	background-color: brown;
+}
+
+.grid-container-menu nav {
+	grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    
+    //subgrid not working
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-self: end;
+
+	background-color: green;
+}
+
+
+
+
+.grid-container-projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+	grid-gap: 20px;
+	justify-content: center;
+
+	background-color: grey;
+}
+
+.grid-container-projects aside {
+    position: relative;
+    text-align: center; 
+
+    background-color: navyblue;
+    border: thin solid black;
+}
+
+
+.link-project {
+    margin: 0 auto;
+    display: table;
+}
+
+
+.link-github img {
+    width: 30px;
+    height: 30px;
+}
+
+

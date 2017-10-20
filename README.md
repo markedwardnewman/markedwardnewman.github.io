@@ -29,8 +29,8 @@ Enough **Drupal** experience to be dangerous. Set-up and deployment, user accoun
 
 ### Development Tools & Environments
 - UNIX | Linux | Windows | OS X
-- WAMP/LAMP | MEAN | node.js
-- npm | gulp, grunt (watch, postcss, autoprefix, CSS3, etc.), webpack
+- WAMP/LAMP | node.js
+- npm | gulp, grunt (watch, postcss, autoprefix, etc.), webpack
 - Visual Studio | Eclipse | Cloud9 | Notepad++ / Sublime
 - Amazon Web Services (AWS) | Heroku | Red Hat's OpenShift
 - Git | GitHub | Bitbucket | SVN

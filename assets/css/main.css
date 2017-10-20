@@ -16,15 +16,11 @@ html {
   box-sizing: inherit; }
 
 ::-moz-selection {
-  background-color: #639163;
   background-color: rgba(99, 145, 99, 0.3);
-  color: #cddfcf;
   color: rgba(205, 223, 207, 1); }
 
 ::selection {
-  background-color: #639163;
   background-color: rgba(99, 145, 99, 0.3);
-  color: #cddfcf;
   color: rgba(205, 223, 207, 1); }
 
 body {
@@ -36,7 +32,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #cddfcf;
   color: rgba(205, 223, 207, .95);
   font-weight: 300;
   font-family: "Roboto", sans-serif; }
@@ -58,10 +53,8 @@ h1 {
 h2 {
   margin: 0;
   padding: 1rem;
-  border: thin solid #cddfcf;
   border: thin solid rgba(205, 223, 207, .25);
   border-radius: 2rem;
-  background-color: #000000;
   background-color: rgba(0, 0, 0, 0.95);
   text-align: center;
   font-weight: 700;
@@ -78,7 +71,6 @@ h3 {
   border-bottom: 1px solid transparent;
   border-left: 1px solid rgba(205, 223, 207, .25);
   border-radius: 2rem;
-  background-color: #643232;
   background-color: rgba(100, 50, 50, 1);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
   font-weight: 700;
@@ -87,7 +79,6 @@ h3 {
 
 h3:hover, h3:focus {
   outline-width: 0;
-  background-color: #643232;
   background-color: rgba(100, 50, 50, .75);
   cursor: pointer;
   transition: 0.15s; }
@@ -100,7 +91,6 @@ h3:focus {
 
 h3.active {
   border: 1px solid #492424;
-  background-color: #643232;
   background-color: rgba(100, 50, 50, .67);
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.95);
   cursor: pointer;
@@ -142,7 +132,6 @@ h3 + div {
   border-right: thin solid rgba(205, 223, 207, .37);
   border-bottom: thin solid transparent;
   border-left: thin solid rgba(205, 223, 207, .37);
-  background-color: #000000;
   background-color: rgba(0, 0, 0, 0.95);
   transition: 1s;
   will-change: max-height; }
@@ -155,28 +144,23 @@ h3.active:last-of-type + div {
   margin-bottom: 0; }
 
 a {
-  color: #cddfcf;
   color: rgba(205, 223, 207, .67); }
 
 a:hover,
 a:visited {
-  color: #cddfcf;
   color: rgba(205, 223, 207, .95); }
 
 a:active {
-  color: #cddfcf;
   color: rgba(205, 223, 207, 1); }
 
 a:focus {
   outline-width: 1px;
   outline-style: dotted;
-  outline-color: #cddfcf;
   outline-color: rgba(205, 223, 207, .75); }
 
 p {
   margin: 0;
   padding: 1rem 0 1rem 0;
-  color: #cddfcf;
   color: rgba(205, 223, 207, .67);
   font-size: 1rem;
   line-height: 1.5; }
@@ -226,9 +210,7 @@ header > nav > a {
   border-right: 1px solid rgba(0, 0, 0, 0.95);
   border-left: 1px solid rgba(205, 223, 207, .25);
   background: linear-gradient(to bottom right, #492424, #643232);
-  background-color: #643232;
   background-color: rgba(100, 50, 50, .95);
-  color: #cddfcf;
   color: rgba(205, 223, 207, 1);
   text-align: center;
   text-decoration: none;
@@ -240,7 +222,6 @@ header nav a:hover {
   background: linear-gradient(to bottom right, #492424, #492424); }
 
 header nav a:active {
-  background-color: #643232;
   background-color: rgba(100, 50, 50, 1); }
 
 section,
@@ -253,7 +234,6 @@ section > div {
   padding: 1rem 2.5% 1rem 2.5%;
   border-right: thin solid rgba(205, 223, 207, .37);
   border-left: thin solid rgba(205, 223, 207, .37);
-  background-color: #643232;
   background-color: rgba(100, 50, 50, .5); }
 
 section:nth-child(3) > div {
@@ -295,13 +275,11 @@ aside {
   border-bottom: 0;
   border-left: 1px solid rgba(205, 223, 207, .25);
   border-radius: 2rem;
-  background-color: #643232;
   background-color: rgba(100, 50, 50, 1);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
   text-align: center; }
 
 aside:hover {
-  background-color: #643232;
   background-color: rgba(100, 50, 50, .75);
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.95); }
 
@@ -380,7 +358,6 @@ section:last-of-type ul {
 li {
   margin: 0;
   padding: 0;
-  color: #cddfcf;
   color: rgba(205, 223, 207, .67);
   font-size: 1rem;
   line-height: 1.5; }
@@ -391,13 +368,10 @@ li:last-child {
 footer {
   position: relative;
   padding: 0 0 1rem 0;
-  border: thin solid #cddfcf;
   border: thin solid rgba(205, 223, 207, .25);
   border-bottom: rgba(0, 0, 0, 0.95);
   border-radius: 2rem 2rem 0 0;
-  background-color: #000000;
   background-color: rgba(0, 0, 0, 0.95);
-  color: #cddfcf;
   color: rgba(205, 223, 207, .95);
   text-align: center; }
 

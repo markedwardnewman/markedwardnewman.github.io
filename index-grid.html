@@ -3,30 +3,15 @@
 <head>
   <title>Mark Newman’s Portfolio</title>
   <meta charset="utf-8">
-  <!--
-  This site…
-
-    …is responsiv across all major browsers and platforms without the use of any framework. Ie, it (should) render appropriately on any Android, iPhone, iPad, Windows PC, Mac, etc. using any reletively recent browser - including Samsung's!).
-    …maintains accessibility using semantically correct HTML without needing WAI-ARIA attribute enhancements. Try using the keyboard instead of the mouse to navigate the page (<TAB> to navigate links, for example).
-    …uses element names and pseudo-selectors for element attribute declarations (no CSS class names are used). Done to demonstrate a more nuanced knowledge of CSS (in lieu of production-level best practices).
-    …uses only vanilla javascript.
-
-  -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="author" content="Mark Newman">
-  <meta name="description" content="Mark Newman’s Portfolio – Front End Web Developer – Austin.Texas | My meta-skills, Github source code, and recent projects">
-  <meta name="keywords" content="front-end, frontend, web developer, html, css, javascript, angular, responsive, remote">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="author" href="humans.txt" type="text/css">
   <link rel="icon" href="apple-touch-icon.png" type="image/apple-touch-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300,700" rel="stylesheet">
-  <link rel="preload" href="assets/css/main.css" as="style">
-  <link rel="preload" href="assets/js/main.js" as="script">
-  <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+  <link rel="stylesheet" href="main-grid.css" type="text/css">
 </head>
 <body>
-  <header>
+  <header class="grid-container-menu">
     <h1>Mark Newman’s Portfolio</h1>
     <nav>
       <a href="#about">About</a>
@@ -71,70 +56,54 @@
   </section>
   <section id="projects">
     <h2>Recent Projects</h2>
-    <div>
+    <div class="grid-container-projects">
       <aside>
-        <h3>Single Page App – Cisco</h3>
-        <a href="https://community.spiceworks.com/partners/cisco/spark-quiz" target="_blank"><img alt="cisco logo" src="assets/img/logo-cisco.png"></a>
-        <a href="" target="_blank"><img alt="github icon" src="assets/img/logo-github2.png"></a>
-        <p>
-          <b>SINGLE PAGE APP:</b> html, sass, js, jQuery, backbone.js, underscore.js
-        </p>
+        <h3>Single Page App</h3>
+        <a class="link-project" href="https://community.spiceworks.com/partners/cisco/spark-quiz" target="_blank"><img alt="cisco logo" src="assets/img/logo-cisco.png"></a>
+        <a class="link-github" href="" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+        html, sass, js, jQuery, backbone.js, underscore.js
       </aside>
       <aside>
-        <h3>Single Page App – Lenovo</h3>
-        <a href="https://community.spiceworks.com/partners/lenovo/mobilityquiz/mobilityquiz-en" target="_blank"><img alt="lenovo logo" src="assets/img/logo-lenovo.png"></a>
-        <a href="" target="_blank"><img alt="github icon" src="assets/img/logo-github2.png"></a>
-        <p>
-          <b>SINGLE PAGE APP:</b> html, sass, js, jQuery, backbone.js, underscore.js
-        </p>
+        <h3>Single Page App</h3>
+        <a class="link-project" href="https://community.spiceworks.com/partners/lenovo/mobilityquiz/mobilityquiz-en" target="_blank"><img alt="lenovo logo" src="assets/img/logo-lenovo.png"></a>
+        <a class="link-github" href="" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+		html, sass, js, jQuery, backbone.js, underscore.js
       </aside>
       <aside>
-        <h3>Full Site – ItalianWay</h3>
-        <a href="https://en.italianway.house/" target="_blank"><img alt="italianway logo" src="assets/img/logo-italianway.png"></a>
-        <a href="" target="_blank"><img alt="github icon" src="assets/img/logo-github2.png"></a>
-        <p>
-          <b>SITE:</b> ruby on rails, erb, html, js, jQuery, sass, bootstrap, google maps API
-        </p>
+        <h3>Full Site</h3>
+        <a class="link-project" href="https://en.italianway.house/" target="_blank"><img alt="italianway logo" src="assets/img/logo-italianway.png"></a>
+        <a class="link-github" href="" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+        ruby on rails, erb, html, js, jQuery, sass, bootstrap, google maps API
       </aside>
       <aside>
-        <h3>Full Site – e-MDs</h3>
-        <a href="http://e-mds.com/" target="_blank"><img alt="emds logo" src="assets/img/logo-emds.png"></a>
-        <a href="https://github.com/markedwardnewman/e-mds.com" target="_blank"><img alt="github icon" src="assets/img/logo-github2.png"></a>
-        <p>
-          <b>SITE:</b> drupal, php, html, less, bootstrap, js, jQuery
-        </p>
+        <h3>Full Site</h3>
+        <a class="link-project" href="http://e-mds.com/" target="_blank"><img alt="emds logo" src="assets/img/logo-emds.png"></a>
+        <a class="link-github" href="https://github.com/markedwardnewman/e-mds.com" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+        drupal, php, html, less, bootstrap, js, jQuery
       </aside>
       <aside>
-        <h3>Android App – The Lazy Boyfriend</h3>
-        <a href="https://play.google.com/store/apps/details?id=com.thelazyboyfriend.app&hl=en" target="_blank"><img alt="lazy boyfriend logo" src="assets/img/logo-lazyboyfriend.png"></a>
-        <a href="https://github.com/markedwardnewman/the-lazy-boyfriend" target="_blank"><img alt="github icon" src="assets/img/logo-github2.png"></a>
-        <p>
-          <b>ANDROID APP:</b> asynchronous, java, google adwords API, Android Studio
-        </p>
+        <h3>Android App</h3>
+        <a class="link-project" href="https://play.google.com/store/apps/details?id=com.thelazyboyfriend.app&hl=en" target="_blank"><img alt="lazy boyfriend logo" src="assets/img/logo-lazyboyfriend.png"></a>
+        <a class="link-github" href="https://github.com/markedwardnewman/the-lazy-boyfriend" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+        asynchronous, java, google adwords API, Android Studio
       </aside>
       <aside>
-        <h3>Chrome Extension - Evabot.ai</h3>
-        <a href="https://www.evabot.ai/" target="_blank"><img alt="eva logo" src="assets/img/logo-eva.png"></a>
-        <a href="https://github.com/markedwardnewman/evabot-chrome-extension" target="_blank"><img alt="github icon" src="assets/img/logo-github2.png"></a>
-        <p>
-          <b>CHROME EXTENSION:</b> javascript, css, RESTful API - google chrome
-        </p>
+        <h3>Chrome Extension</h3>
+        <a class="link-project" href="https://www.evabot.ai/" target="_blank"><img alt="eva logo" src="assets/img/logo-eva.png"></a>
+        <a class="link-github" href="https://github.com/markedwardnewman/evabot-chrome-extension" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+        javascript, css, RESTful API - google chrome
       </aside>
       <aside>
-        <h3>Testing – Angular2 Playground</h3>
-        <a href="https://angular2-playground1.herokuapp.com/" target="_blank"><img alt="angular2 logo" src="assets/img/logo-angular2.png"></a>
-        <a href="https://github.com/markedwardnewman/angular2-playground1" target="_blank"><img alt="github icon" src="assets/img/logo-github2.png"></a>
-        <p>
-          <b>TESTING:</b> Angular2 with Google Books API hook, deployed to heroku
-        </p>
+        <h3>Angular2 Testing</h3>
+        <a class="link-project" href="https://angular2-playground1.herokuapp.com/" target="_blank"><img alt="angular2 logo" src="assets/img/logo-angular2.png"></a>
+        <a class="link-github" href="https://github.com/markedwardnewman/angular2-playground1" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+        Angular2 with Google Books API hook, deployed to heroku
       </aside>
       <aside>
-        <h3>My Portfolio’s code</h3>
-        <a href="https://github.com/markedwardnewman/markedwardnewman.github.io" target="_blank"><img alt="portfolio logo" src="assets/img/logo-portfolio.png"></a>
-        <a href="" target="_blank"><img alt="github icon" src="assets/img/logo-github2.png"></a>
-        <p>
-          <b>CODE:</b> My portfolio’s source code
-        </p>
+        <h3>Portfolio Source Code</h3>
+        <a class="link-project" href="https://github.com/markedwardnewman/markedwardnewman.github.io" target="_blank"><img alt="portfolio logo" src="assets/img/logo-portfolio.png"></a>
+        <a class="link-github" href="https://github.com/markedwardnewman/markedwardnewman.github.io" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+        npm, grunt, git, html, scss, javascript
       </aside>
     </div>
   </section>
@@ -155,7 +124,7 @@
           <li>C# | VB.NET</li>
           <li>Oracle’s SQL</li>
         </ul>
-        <a href="https://github.com/markedwardnewman" target="_blank"><img alt="github logo" src="assets/img/logo-github-bg2.png"></a>
+        <a href="https://github.com/markedwardnewman" target="_blank"><img alt="github logo" src="assets/img/logo-github-bg.png"></a>
       </div>
       <h3 tabindex="0">&nbsp;<span>Tools</span></h3>
       <div>
@@ -166,7 +135,7 @@
           <li>Android Studio | Visual Studio | Eclipse | Cloud9 | Notepad++ | Sublime</li>
           <li>VMware | VirtualBox</li>
         </ul>
-        <a href="https://github.com/markedwardnewman" target="_blank"><img alt="github icon" src="assets/img/logo-github-bg2.png"></a>
+        <a href="https://github.com/markedwardnewman" target="_blank"><img alt="github icon" src="assets/img/logo-github-bg.png"></a>
       </div>
       <h3 tabindex="0">&nbsp;<span>Environments</span></h3>
       <div>
@@ -175,7 +144,7 @@
           <li>Amazon Web Services (AWS) | Heroku | Red Hat’s OpenShift</li>
           <li>WAMP/LAMP | node.js</li>
         </ul>
-        <a href="https://github.com/markedwardnewman" target="_blank"><img alt="github icon" src="assets/img/logo-github-bg2.png"></a>
+        <a href="https://github.com/markedwardnewman" target="_blank"><img alt="github icon" src="assets/img/logo-github-bg.png"></a>
       </div>
     </div>
   </section>

@@ -11,6 +11,9 @@ Disallow: /cache/
 Disallow: /cli/
 Disallow: /components/
 Disallow: /images/
+Disallow: /src/
+Disallow: /.sass-cache/
+Disallow: /node_modules/
 Disallow: /includes/
 Disallow: /installation/
 Disallow: /language/

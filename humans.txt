@@ -9,7 +9,7 @@
 
 # TECHNOLOGY COLOPHON
     Year created:
-        Late 2013 / early 2014
+        Late 2013
     Modified:
         Plenty
     Language:
@@ -27,7 +27,6 @@
         Roboto Slab     :700
     Code Libraries used:
         none for rendering the page itself
-        https://github.com/MohamedBassem/spam-referrals-blocker to block spammy referrals that normally get counted in Google Analytics
     Local tools:
         Notepad++
         Chrome Developer tools
