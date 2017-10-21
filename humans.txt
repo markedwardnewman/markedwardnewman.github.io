@@ -32,7 +32,7 @@
         Chrome Developer tools
         Adobe Photoshop
         First LESS, then SASS pre-processors
-        Git Bash / npm / grunt
+        Git bash / npm / grunt
     Online tools:
         Viewport Dimensions by www.cswapps.com
         Github
