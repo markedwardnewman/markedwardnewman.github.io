@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <!--
       This site...
-        ...uses the new css-grid attributes to arrange and display the top nav menu and project listings. MS's Edge is having slight hiccups with css-grid, so Edge users get redirected to a slightly older version of this portfolio.
+        ...uses the new css-grid attributes to arrange and display the top nav menu and project listings. MS's Edge is having slight hiccups with css-grid, so Edge users get redirected to a slightly older version of this portfolio. 
         ...is responsive across all major browsers and platforms without the use of any framework. Ie, it (should) render appropriately on any Android, iPhone, iPad, Windows PC, Mac, etc. using any reletively recent browser - including Samsung's!).
         ...maintains accessibility using semantically correct HTML without needing WAI-ARIA attribute enhancements. Try using the keyboard instead of the mouse to navigate the page (<TAB> to navigate links, for example).
         ...uses element names and pseudo-selectors for element attribute declarations (very limited use of CSS class names).
@@ -25,27 +25,26 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   </head>
   <body>
-    <script>
-        //Internet Explorer does not support CSS-grid and MS Edge acts strange. This redirects users to a previous version of my portfolio...
-        if (/MSIE 10/i.test(navigator.userAgent)) {
+    <script type="text/javascript">
+      //Internet Explorer does not support CSS-grid and MS Edge acts strange. This redirects users to a previous version of my portfolio...
+      if (/MSIE 10/i.test(navigator.userAgent)) {
         //Internet Explorer 10
         window.location = "http://marknewman.me/marknewman.me_2016/";
-        }
+      }
 
-        if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+      if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
         //Internet Explorer 9 or 11
         window.location = "http://marknewman.me/marknewman.me_2016/";
-        }
+      }
 
-        if (/Edge\/\d./i.test(navigator.userAgent)){
+      if (/Edge\/\d./i.test(navigator.userAgent)){
         //Microsoft Edge
         window.location = "http://marknewman.me/marknewman.me_2016/";
-        }
+      }
     </script>
     <header>
       <h1>My Portfolio</h1>
       <nav>
-        <h2>Navigation</h2>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -64,14 +63,14 @@
       </div>
       <h3 tabindex="0">&nbsp;<span>Back End</span></h3>
       <div>
-        <p>
-          As of 2017, <b>Apple, Inc.</b> is still using a stand-alone business intelligence tool I wrote while teaching myself VB.NET. It monitors certain manufacturing processes for threshold events and can remotely counter breaches as they occur in real-time. All hail the Mac Pro! Also, it’s a little known fact that the prototype for its unified thermal core is <a href="https://cdn.arstechnica.net/wp-content/uploads/2013/06/002.png" target="_blank">the actual mouthpiece that once belonged to <b>Darth Vader</b></a>.
+        <p> 
+          As of 2017, <b>Apple, Inc.</b> is still using a stand-alone business intelligence tool I wrote while teaching myself VB.NET. It monitors certain manufacturing processes for threshold events and can remotely counter breaches as they occur in real-time. All hail the Mac Pro! Also, it’s a little known fact that the prototype for its unified thermal core is <a href="https://www.apple.com/mac-pro/" target="_blank">the actual mouthpiece that once belonged to <b>Darth Vader</b></a>.
         </p>
         <p>
           Have developed a couple of from-the-ground-up <b>Ruby on Rails</b> sites with a back-end that shields against nefarious internet shenanigans. Features include <b>SSL encryption</b>, email-based <b>account activation</b> and <b>password reset</b>, <b>encrypted authorizations</b> (using bcrypt), session-based cookies, and regexually constrained <b>form validation</b>.
         </p>
         <p>
-          I’ve a <b>Google Play</b> distributed Android app that’s unapologetically enhanced with their <b>Adwords API</b>. Its 500+ user-base now generate enough revenue to buy me at least one extra fancy coffee a week.
+          I’ve a <b>Google Play</b> distributed <a href="https://play.google.com/store/apps/details?id=com.thelazyboyfriend.app" target="_blank">Android app</a> that’s unapologetically enhanced with their <b>Adwords API</b>. Its 500+ user-base now generate enough revenue to buy me at least one extra fancy coffee a week.
         </p>
         <p>
           Enough <b>Drupal</b> experience to be dangerous. This includes set-up and deployment, user account administration, <b>theme and template creation</b>, server-side code integration, and all things front-end. Recent proponent of <a href="https://getkirby.com/" target="_blank">Kirby</a>, a database-less, file-based CMS.
@@ -89,41 +88,47 @@
       <div>
         <aside>
           <h3>Single Page App</h3>
-          <a href="https://community.spiceworks.com/partners/cisco/spark-quiz" target="_blank"><img alt="cisco logo" src="assets/img/logo-cisco.png"></a>
+          <a class="link-project" href="https://community.spiceworks.com/partners/cisco/spark-quiz" target="_blank"><img alt="cisco logo" src="assets/img/logo-cisco.png"></a>
           - html, sass, js, jQuery, backbone.js, underscore.js
         </aside>
         <aside>
           <h3>Single Page App</h3>
-          <a href="https://community.spiceworks.com/partners/lenovo/mobilityquiz/mobilityquiz-en" target="_blank"><img alt="lenovo logo" src="assets/img/logo-lenovo.png"></a>
+          <a class="link-project" href="https://community.spiceworks.com/partners/lenovo/mobilityquiz/mobilityquiz-en" target="_blank"><img alt="lenovo logo" src="assets/img/logo-lenovo.png"></a>
           - html, sass, js, jQuery, backbone.js, underscore.js
         </aside>
         <aside>
           <h3>Full Site</h3>
-          <a href="https://en.italianway.house/" target="_blank"><img alt="italianway logo" src="assets/img/logo-italianway.png"></a>
+          <a class="link-project" href="https://en.italianway.house/" target="_blank"><img alt="italianway logo" src="assets/img/logo-italianway.png"></a>
           - ruby on rails, erb, html, js, jQuery, sass, bootstrap, google maps API
         </aside>
         <aside>
           <h3>Full Site</h3>
-          <a href="http://e-mds.com/" target="_blank"><img alt="emds logo" src="assets/img/logo-emds.png"></a>
-          <a href="https://github.com/markedwardnewman/e-mds.com" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+          <a class="link-project" href="http://e-mds.com/" target="_blank"><img alt="emds logo" src="assets/img/logo-emds.png"></a>
+          <a class="link-github" href="https://github.com/markedwardnewman/e-mds.com" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
           - drupal, php, html, less, bootstrap, js, jQuery
         </aside>
         <aside>
+          <h3>Android App</h3>
+          <a class="link-project" href="https://play.google.com/store/apps/details?id=com.thelazyboyfriend.app&hl=en" target="_blank"><img alt="lazy boyfriend logo" src="assets/img/logo-lazyboyfriend.png"></a>
+          <a class="link-github" href="https://github.com/markedwardnewman/the-lazy-boyfriend" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+          - asynchronous, java, google adwords API, Android Studio
+        </aside>
+        <aside>
           <h3>Chrome Extension</h3>
-          <a href="https://www.evabot.ai/" target="_blank"><img alt="eva logo" src="assets/img/logo-eva.png"></a>
-          <a href="https://github.com/markedwardnewman/evabot-chrome-extension" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+          <a class="link-project" href="https://www.evabot.ai/" target="_blank"><img alt="eva logo" src="assets/img/logo-eva.png"></a>
+          <a class="link-github" href="https://github.com/markedwardnewman/evabot-chrome-extension" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
           - javascript, css, RESTful API - google chrome
         </aside>
         <aside>
           <h3>Angular2 Testing</h3>
-          <a href="https://angular2-playground1.herokuapp.com/" target="_blank"><img alt="angular2 logo" src="assets/img/logo-angular2.png"></a>
-          <a href="https://github.com/markedwardnewman/angular2-playground1" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+          <a class="link-project" href="https://angular2-playground1.herokuapp.com/" target="_blank"><img alt="angular2 logo" src="assets/img/logo-angular2.png"></a>
+          <a class="link-github" href="https://github.com/markedwardnewman/angular2-playground1" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
           - Angular2 with Google Books API hook, deployed to heroku
         </aside>
         <aside>
           <h3>Portfolio Source Code</h3>
-          <a href="https://github.com/markedwardnewman/markedwardnewman.github.io" target="_blank"><img alt="portfolio logo" src="assets/img/logo-portfolio.png"></a>
-          <a href="https://github.com/markedwardnewman/markedwardnewman.github.io" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
+          <a class="link-project" href="https://github.com/markedwardnewman/markedwardnewman.github.io" target="_blank"><img alt="portfolio logo" src="assets/img/logo-portfolio.png"></a>
+          <a class="link-github" href="https://github.com/markedwardnewman/markedwardnewman.github.io" target="_blank"><img alt="github icon" src="assets/img/logo-github.png"></a>
           - npm, grunt, git, html, scss, javascript
         </aside>
       </div>
@@ -170,8 +175,8 @@
     <footer>
       <h2>Contact</h2>
       <a href="assets/misc/MarkNewmanResume.docx">resume</a>
-      <a href="https://www.linkedin.com/in/markedwardnewman" target="_blank"><img alt="linkedin icon" src="assets/img/logo-linkedin.png"></a>
-      <a href="mailto:markedwardnewman@gmail.com">markedwardnewman@gmail.com</a>
+      <a href="https://www.linkedin.com/in/markedwardnewman" target="_blank" title="linkedIn"><img alt="linkedin icon" src="assets/img/logo-linkedin.png"></a>
+      <a href="mailto:markedwardnewman@gmail.com" title="markedwardnewman@gmail.com">markedwardnewman@gmail.com</a>
     </footer>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -181,8 +186,10 @@
 
         ga('create', 'UA-104389933-1', 'auto');
         ga('send', 'pageview');
+    </script> 
+    <script src="assets/js/main.js">
+    </script> 
+    <script src="//localhost:35729/livereload.js">
     </script>
-    <script src="assets/js/main.js"></script>
-    <script src="//localhost:35729/livereload.js"></script>
   </body>
 </html>
